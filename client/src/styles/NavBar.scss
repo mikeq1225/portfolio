@@ -1,0 +1,50 @@
+@use 'vars';
+@use 'utilities';
+
+#navBar {
+	position: sticky;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: #fff;
+
+	.container {
+		padding: 1rem 0;
+
+		nav {
+			display: flex;
+			justify-content: space-between;
+			padding: 1.5rem 0 0 0;
+
+			img#logo {
+				width: 120px;
+				height: 40px;
+			}
+
+			ul {
+				display: flex;
+
+				li {
+					padding: 1.5rem 2rem;
+
+					a {
+						color: vars.$darkColor;
+						text-transform: uppercase;
+						border-bottom: 3px solid transparent;
+						padding: 0 0 1rem 0;
+						transition: border-color 0.5s;
+						font-size: 1.5rem;
+
+						&:hover {
+							border-color: vars.$medColor;
+						}
+
+						&.selected {
+							border-color: vars.$mainColor;
+						}
+					}
+				}
+			}
+		}
+	}
+}

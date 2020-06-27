@@ -1,0 +1,51 @@
+@use 'vars';
+
+.container {
+	max-width: vars.$width;
+	padding: 2rem;
+	margin: auto;
+	overflow: hidden;
+}
+
+%buttonShared {
+	display: inline-block;
+	padding: 1rem 2rem;
+	transition: all 0.5s;
+	border: none;
+	cursor: pointer;
+}
+
+.button {
+	&Main {
+		@extend %buttonShared;
+		color: #333;
+		background-color: vars.$mainColor;
+	}
+
+	&Light {
+		@extend %buttonShared;
+		color: #333;
+		background-color: vars.$lightColor;
+	}
+
+	&Dark {
+		@extend %buttonShared;
+		color: #f4f4f4;
+		background-color: vars.$darkColor;
+	}
+}
+
+button[class^="button"]:hover,
+a[class^="button"]:hover,
+input[class^="button"]:hover {
+	background-color: vars.$mainColor;
+}
+
+.lead {
+	font-size: 2rem;
+	margin: 0 0 2.5rem 0;
+}
+
+.textCenter {
+	text-align: center;
+}
