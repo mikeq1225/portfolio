@@ -1,0 +1,17 @@
+@use 'vars';
+@use 'utilities';
+
+#headerHome {
+	background: vars.$medColor;
+	height: 100vh;
+	color: #fff;
+
+	.container {
+		nav {
+			img#logo {
+				width: 120px;
+				height: 40px;
+			}
+		}
+	}
+}
