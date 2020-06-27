@@ -1,0 +1,9 @@
+@use 'vars';
+@use 'utilities';
+
+#about {
+	h1 {
+		color: vars.$darkColor;
+		height: 400px;
+	}
+}

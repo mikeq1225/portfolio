@@ -1,16 +1,66 @@
 @use 'vars';
 @use 'utilities';
 
-#headerHome {
-	background: vars.$medColor;
+#showcase {
 	height: 100vh;
 	color: #fff;
+	background: url("/assets/background3.jpg") no-repeat center center/cover;
 
-	.container {
-		nav {
-			img#logo {
-				width: 120px;
-				height: 40px;
+	header {
+		.container {
+			nav {
+				display: flex;
+				justify-content: space-between;
+				padding: 1.5rem 0 0 0;
+
+				img#logo {
+					width: 120px;
+					height: 40px;
+				}
+
+				ul {
+					display: flex;
+
+					li {
+						padding: 1.5rem 2rem;
+
+						a {
+							color: vars.$darkColor;
+							text-transform: uppercase;
+							border-bottom: 3px solid transparent;
+							padding: 0 0 1rem 0;
+							transition: border-color 0.5s;
+							font-size: 1.5rem;
+
+							&:hover {
+								border-color: vars.$medColor;
+							}
+
+							&.selected {
+								border-color: vars.$mainColor;
+							}
+						}
+					}
+				}
+			}
+
+			div.headerContent {
+				text-align: center;
+				padding: 20% 0 0 0;
+
+				h1 {
+					font-size: 5rem;
+					line-height: 1.2;
+					color: vars.$darkColor;
+				}
+
+				p {
+					color: vars.$darkColor;
+				}
+
+				a {
+					font-size: 1.7rem;
+				}
 			}
 		}
 	}
