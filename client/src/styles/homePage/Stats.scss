@@ -1,0 +1,36 @@
+@use '../vars';
+@use '../utilities';
+
+div#statSection {
+	section.stats {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+
+		div {
+			padding: 3rem 0;
+
+			&:nth-child(odd) {
+				background: vars.$lightColor;
+			}
+
+			&:nth-child(even) {
+				background: vars.$medColor;
+			}
+
+			ul {
+				li {
+					line-height: 2;
+
+					&.title {
+						font-size: 1.6rem;
+					}
+
+					&.number {
+						font-size: 1.9rem;
+						font-weight: bold;
+					}
+				}
+			}
+		}
+	}
+}

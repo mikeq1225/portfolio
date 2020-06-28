@@ -1,0 +1,34 @@
+@use '../vars';
+@use '../utilities';
+
+#specialize {
+	section {
+		div.container {
+			h2 {
+				font-size: 2.5rem;
+			}
+
+			div.specials {
+				margin: 3rem 0 0 0;
+				display: grid;
+				grid-gap: 1.5rem;
+				grid-template-columns: repeat(4, 1fr);
+
+				div {
+					svg {
+						color: vars.$mainColor;
+						margin: 0 0 1rem 0;
+					}
+
+					h3 {
+						font-size: 2rem;
+					}
+
+					p {
+						font-size: 1.5rem;
+					}
+				}
+			}
+		}
+	}
+}

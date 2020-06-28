@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "react-router-dom"
-import "../styles/Header.scss"
-import "../typewriter"
+import "../../styles/homePage/Header.scss"
+import "../../typewriter"
 
 export default (props) => {
 	return (
