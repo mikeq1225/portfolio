@@ -6,7 +6,6 @@ import {
 	FaDesktop,
 	FaThumbsUp,
 } from "react-icons/fa"
-import { IconContext } from "react-icons/lib"
 
 export default (props) => {
 	return (
