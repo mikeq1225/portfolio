@@ -5,6 +5,7 @@ import Header from "./homePage/Header"
 import Specialize from "./homePage/Specialize"
 import Stats from "./homePage/Stats"
 import Process from "./homePage/Process"
+import Process2 from "./homePage/Process2"
 import Footer from "./Footer"
 
 export default (props) => {
@@ -17,6 +18,7 @@ export default (props) => {
 					<Route path="/" component={Specialize}></Route>
 					<Route path="/" component={Stats}></Route>
 					<Route path="/" component={Process}></Route>
+					<Route path="/" component={Process2}></Route>
 					<Route path="/" component={Footer}></Route>
 				</Suspense>
 			</div>
