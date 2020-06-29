@@ -14,14 +14,14 @@ export default (props) => {
 		<div id="specialize">
 			<section className="textCenter padY2">
 				<div className="container">
-					<h2>I Specialize In</h2>
+					<h2 className="sectionTitle">I Specialize In</h2>
 					<div className="bottomLine"></div>
 					<p className="lead">
 						Making the customer's needs dictate design and making responsive
 						websites
 					</p>
 					<div className="specials">
-						<IconContext.Provider value={{ size: "3rem" }}>
+						<IconContext.Provider value={{ size: "4rem" }}>
 							<div>
 								<FaFileAlt />
 								<h3>Conceptualize</h3>

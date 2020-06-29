@@ -1,0 +1,36 @@
+@use 'vars';
+@use 'utilities';
+
+div#footer {
+	background: vars.$darkColor;
+	color: vars.$lightColor;
+	height: 6rem;
+
+	div.content {
+		display: flex;
+		justify-content: space-between;
+		height: 6rem;
+		align-items: center;
+
+		p {
+			font-size: 1.2rem;
+		}
+
+		div.social {
+			a {
+				svg {
+					color: #fff;
+					margin: 0 1.5rem 0 0;
+					height: 30px;
+					width: 30px;
+					transition: 0.3s;
+
+					&:hover {
+						color: vars.$mainColor;
+						transition: 0.3s;
+					}
+				}
+			}
+		}
+	}
+}
