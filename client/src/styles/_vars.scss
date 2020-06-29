@@ -4,3 +4,12 @@ $mainColor: #ffbc00;
 $lightColor: #f4f4f4;
 $medColor: #ccc;
 $darkColor: #333;
+
+// Set Text colors
+@function setTextColor($color) {
+	@if (lightness($color) > 50) {
+		@return $darkColor;
+	} @else {
+		@return $lightColor;
+	}
+}
