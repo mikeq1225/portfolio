@@ -15,6 +15,7 @@
 	cursor: pointer;
 }
 
+// Buttons
 .button {
 	&Main {
 		@extend %buttonShared;
@@ -39,6 +40,26 @@ button[class^="button"]:hover,
 a[class^="button"]:hover,
 input[class^="button"]:hover {
 	background-color: vars.$mainColor;
+}
+
+// Backgrounds
+.bg {
+	&Main {
+		background: vars.$mainColor;
+		color: vars.$lightColor;
+	}
+	&Dark {
+		background: vars.$darkColor;
+		color: vars.$lightColor;
+	}
+	&Light {
+		background: vars.$lightColor;
+		color: vars.$darkColor;
+	}
+	&Medium {
+		background: vars.$medColor;
+		color: vars.$darkColor;
+	}
 }
 
 .lead {

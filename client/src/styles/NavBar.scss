@@ -6,8 +6,9 @@
 	top: 0;
 	left: 0;
 	width: 100%;
-	background: #fff;
+	background: vars.$lightColor;
 	z-index: 2;
+	border-bottom: 2px solid vars.$mainColor;
 
 	.container {
 		padding: 1rem 0;

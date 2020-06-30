@@ -25,6 +25,7 @@ export default (props) => {
 								animateIn="animate__fadeInRightBig"
 								offset={150}
 								duration={1.5}
+								animateOnce={true}
 							>
 								<div>
 									<h3>
@@ -40,6 +41,7 @@ export default (props) => {
 								animateIn="animate__fadeInLeftBig"
 								offset={150}
 								duration={1.5}
+								animateOnce={true}
 							>
 								<div>
 									<h3>
@@ -58,6 +60,7 @@ export default (props) => {
 								animateIn="animate__fadeInRightBig"
 								offset={150}
 								duration={1.5}
+								animateOnce={true}
 							>
 								<div>
 									<h3>
@@ -76,6 +79,7 @@ export default (props) => {
 								animateIn="animate__fadeInLeftBig"
 								offset={150}
 								duration={1.5}
+								animateOnce={true}
 							>
 								<div>
 									<h3>
@@ -94,6 +98,7 @@ export default (props) => {
 								animateIn="animate__fadeInRightBig"
 								offset={150}
 								duration={1.5}
+								animateOnce={true}
 							>
 								<div>
 									<h3>
