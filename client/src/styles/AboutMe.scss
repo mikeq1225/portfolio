@@ -1,0 +1,24 @@
+@use 'vars';
+@use 'utilities';
+
+div#about {
+	div.container {
+		div.info {
+			display: grid;
+			grid-template-areas:
+				"image bio bio"
+				"award1 award2 award3";
+			grid-gap: 1.8rem;
+
+			.bioImage {
+				grid-area: image;
+			}
+
+			.bio {
+				grid-area: bio;
+				border-left: 2px solid vars.$mainColor;
+				padding: 1rem;
+			}
+		}
+	}
+}
