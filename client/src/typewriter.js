@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", init)
 
 // Init App
 function init() {
-	const txtElement = document.querySelector(".txtType")
+	const txtElement = document.querySelector(".txt")
 	const words = JSON.parse(txtElement.getAttribute("datawords"))
 	const wait = txtElement.getAttribute("datawait")
 	// Init TypeWriter

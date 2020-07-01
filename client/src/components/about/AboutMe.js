@@ -1,6 +1,6 @@
 import React from "react"
 import { FaAward } from "react-icons/fa"
-import "../styles/AboutMe.scss"
+import "../../styles/about/AboutMe.scss"
 
 export default (props) => {
 	return (

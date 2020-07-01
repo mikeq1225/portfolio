@@ -7,7 +7,10 @@ import Stats from "./homePage/Stats"
 // import Process from "./homePage/Process"
 import Process2 from "./homePage/Process2"
 import Footer from "./Footer"
-import AboutMe from "./AboutMe"
+import AboutMe from "./about/AboutMe"
+import AboutMeProgress from "./about/AboutMeProgress"
+import AboutMeLogos from "./about/AboutMeLogos"
+import AboutMeTestimonials from "./about/AboutMeTestimonials"
 
 export default (props) => {
 	return (
@@ -21,8 +24,11 @@ export default (props) => {
 					<Route exact path="/Home" component={Stats}></Route>
 					{/* <Route exact path="/" component={Process}></Route> */}
 					<Route exact path="/Home" component={Process2}></Route>
-					<Route exact path="/Home" component={Footer}></Route>
 					<Route exact path="/About" component={AboutMe}></Route>
+					<Route exact path="/About" component={AboutMeProgress}></Route>
+					<Route exact path="/About" component={AboutMeLogos}></Route>
+					<Route exact path="/About" component={AboutMeTestimonials}></Route>
+					<Route path="/" component={Footer}></Route>
 				</Suspense>
 			</div>
 		</Router>
