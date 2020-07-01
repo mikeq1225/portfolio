@@ -1,0 +1,61 @@
+@use '../vars';
+
+div#about {
+	div.container {
+		div.info {
+			display: grid;
+			grid-template-areas:
+				"image bio bio"
+				"award1 award2 award3";
+			grid-gap: 1.8rem;
+
+			.bioImage {
+				grid-area: image;
+			}
+
+			.bio {
+				grid-area: bio;
+				border-left: 2px solid vars.$mainColor;
+				padding: 1rem;
+
+				h4 {
+					font-size: 2.3rem;
+				}
+
+				p {
+					font-size: 1.6rem;
+				}
+			}
+
+			.award1 {
+				grid-area: award1;
+			}
+
+			.award2 {
+				grid-area: award2;
+			}
+
+			.award3 {
+				grid-area: award3;
+			}
+
+			.award1,
+			.award2,
+			.award3 {
+				svg {
+					font-size: 4rem;
+					color: vars.$mainColor;
+					margin: 1.5rem;
+				}
+
+				h3 {
+					font-size: 2.1rem;
+				}
+
+				p {
+					font-size: 1.5rem;
+				}
+			}
+		}
+	}
+}

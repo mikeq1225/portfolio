@@ -1,0 +1,27 @@
+@use '../vars';
+
+div#aboutProgress {
+	section {
+		div.container {
+			h4 {
+				font-size: 1.5rem;
+				text-transform: uppercase;
+			}
+
+			div.progress {
+				overflow: hidden;
+				height: 20px;
+				background: vars.$medColor;
+				border-radius: 5px;
+				margin: 0 0 1rem 0;
+
+				div {
+					height: 100%;
+					color: #fff;
+					text-align: center;
+					background: vars.$mainColor;
+				}
+			}
+		}
+	}
+}
