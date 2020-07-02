@@ -10,7 +10,8 @@ import AboutMe from "./about/AboutMe"
 import AboutMeProgress from "./about/AboutMeProgress"
 import AboutMeLogos from "./about/AboutMeLogos"
 import AboutMeTestimonials from "./about/AboutMeTestimonials"
-import Work from "./work/Work"
+import WorkFeature from "./work/WorkFeature"
+import WorkProjects from "./work/WorkProjects"
 import Footer from "./Footer"
 
 export default (props) => {
@@ -29,7 +30,8 @@ export default (props) => {
 					<Route exact path="/About" component={AboutMeProgress}></Route>
 					<Route exact path="/About" component={AboutMeLogos}></Route>
 					<Route exact path="/About" component={AboutMeTestimonials}></Route>
-					<Route path="/Work" component={Work}></Route>
+					<Route path="/Work" component={WorkFeature}></Route>
+					<Route path="/Work" component={WorkProjects}></Route>
 					<Route path="/" component={Footer}></Route>
 				</Suspense>
 			</div>
