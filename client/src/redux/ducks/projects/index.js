@@ -28,7 +28,7 @@ function getProjects() {
 				type: GET_PROJECTS,
 				payload: {
 					projects: resp.data.projects.projects,
-					feature: resp.data.projects.feature,
+					feature: resp.data.projects.feature[0],
 				},
 			})
 		})

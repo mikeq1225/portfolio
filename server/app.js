@@ -14,6 +14,7 @@ const workItems = [
 		title: "Jurn(ease)",
 		subtitle: "Capstone project",
 		brief: "Complete web application",
+		category: "Web Application",
 		description:
 			"A travel planning application that allows multiple users to plan group vacations in the same place.  They can create Jurn(e)s, or trips, and invite others to join.  Then everyone on the Jurn(e) can decide where to go, what do to, and where to stay.",
 		problem:
@@ -24,13 +25,16 @@ const workItems = [
 			"HTML, CSS, Sass, Semantic UI, JavaScript, React, Redux, Node.js, Express, MySQL, AWS-RDS, Slack, Zoom",
 		image: "/assets/JurnEaseScreenShot.png",
 		image2: "/assets/Jurnease2.png",
-		link: "https://demoday.punchcode.org/project/1",
+		link: "https://aqueous-refuge-23431.herokuapp.com",
+		link2: "https://www.youtube.com/watch?v=pT18Us8sayw&feature=youtu.be",
+		link3: "https://www.youtube.com/watch?v=IgaI8lv1QOQ&feature=youtu.be",
 	},
 	{
 		id: 2,
 		title: "ChatRoom",
 		subtitle: "8th project",
 		brief: "Front & backend clone of Slack",
+		category: "Web Application",
 		description:
 			"A week long project the whole class worked on together. We all wrote our own code, but we did the planning side of things as a group.  We had to plan the project from scratch to copy Slack features in an Agile type setting with daily meetings.",
 		problem:
@@ -48,6 +52,7 @@ const workItems = [
 		title: "RyansList",
 		subtitle: "7th project",
 		brief: "Front & backend clone of CraigsList",
+		category: "Web Application",
 		description:
 			"We were tasked with making a replica CraigsList website where users could search and add postings using React components and a MySQL database.",
 		problem:
@@ -64,6 +69,7 @@ const workItems = [
 		title: "Shopping Cart",
 		subtitle: "6th project",
 		brief: "First project with Redux",
+		category: "React & Redux",
 		description:
 			"Our first steps in React. We had to recreate a T-shirt website with the ability to add and delete in a cart as well as simulating a checkout/receipt screen.",
 		problem:
@@ -80,6 +86,7 @@ const workItems = [
 		title: "Mustang Photo Album",
 		subtitle: "5th project",
 		brief: "First project with React",
+		category: "React & Redux",
 		description:
 			"A photo album based an a topic of our choosing. We were given the wireframe layout of each page and we had to replicate it.  We also had to create our own data set in a JSON file and be able to dynamically display that data.",
 		problem:
@@ -96,6 +103,7 @@ const workItems = [
 		title: "Superman Memory Game",
 		subtitle: "4th project",
 		brief: "DOM manipulation with jQuery",
+		category: "jQuery",
 		description:
 			"A simple memory game like we used to play as a child.  There is a deck of cards face down. Flip them over and try to match all the pairs before you run out of turns.",
 		problem:
@@ -112,6 +120,7 @@ const workItems = [
 		title: "BarCade Restaurant",
 		subtitle: "3rd project",
 		brief: "Group Project of a fictional restaurant",
+		category: "Website",
 		description:
 			"A group assingment where we utilized Github for version control and collaboration to make a website for a fictional restaurant. We were given a JSON file with menu items.",
 		problem:
@@ -128,6 +137,7 @@ const workItems = [
 		title: "Etsy Search Page",
 		subtitle: "2nd project",
 		brief: "HTML recreation with JavaScript",
+		category: "Website",
 		description:
 			"Given a mock-up of an Etsy page, we had to recreate the page. We were also given a file with dummy data to be used for the search.",
 		problem: "How to dynamically import the data without typing all of it out.",
@@ -143,6 +153,7 @@ const workItems = [
 		title: "Ska8er Site",
 		subtitle: "1st project",
 		brief: "HTML recreation",
+		category: "Website",
 		description:
 			"Our first project in class. We were given an image of a website and we had to recreate the site. It was meant to teach us principles of HTML and CSS.",
 		problem:
@@ -173,7 +184,6 @@ app.get("/api/projects", (req, res) => {
 			projects.feature.push(project)
 		}
 	})
-	console.log(projects)
 	res.json({ projects: projects })
 })
 
