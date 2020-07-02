@@ -10,7 +10,7 @@ import AboutMe from "./about/AboutMe"
 import AboutMeProgress from "./about/AboutMeProgress"
 import AboutMeLogos from "./about/AboutMeLogos"
 import AboutMeTestimonials from "./about/AboutMeTestimonials"
-
+import Work from "./work/Work"
 import Footer from "./Footer"
 
 export default (props) => {
@@ -29,7 +29,7 @@ export default (props) => {
 					<Route exact path="/About" component={AboutMeProgress}></Route>
 					<Route exact path="/About" component={AboutMeLogos}></Route>
 					<Route exact path="/About" component={AboutMeTestimonials}></Route>
-
+					<Route path="/Work" component={Work}></Route>
 					<Route path="/" component={Footer}></Route>
 				</Suspense>
 			</div>

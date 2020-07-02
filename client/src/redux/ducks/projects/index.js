@@ -24,8 +24,6 @@ export default (state = initialState, action) => {
 function getProjects() {
 	return (dispatch) => {
 		axios.get("/api/projects").then((resp) => {
-			console.log(resp.data.projects.projects)
-			console.log(resp.data.projects.feature)
 			dispatch({
 				type: GET_PROJECTS,
 				payload: {
