@@ -12,6 +12,7 @@ import AboutMeLogos from "./about/AboutMeLogos"
 import AboutMeTestimonials from "./about/AboutMeTestimonials"
 import WorkFeature from "./work/WorkFeature"
 import WorkProjects from "./work/WorkProjects"
+import ResumeHeader from "./resume/ResumeHeader"
 import Footer from "./Footer"
 
 export default (props) => {
@@ -32,6 +33,7 @@ export default (props) => {
 					<Route exact path="/About" component={AboutMeTestimonials}></Route>
 					<Route path="/Work" component={WorkFeature}></Route>
 					<Route path="/Work" component={WorkProjects}></Route>
+					<Route path="/Resume" component={ResumeHeader}></Route>
 					<Route path="/" component={Footer}></Route>
 				</Suspense>
 			</div>
