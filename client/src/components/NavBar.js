@@ -24,8 +24,8 @@ export default (props) => {
 							</NavLink>
 						</li>
 						<li>
-							<NavLink to="/Projects" activeClassName="selected">
-								Projects
+							<NavLink to="/Work" activeClassName="selected">
+								Work
 							</NavLink>
 						</li>
 						<li>
