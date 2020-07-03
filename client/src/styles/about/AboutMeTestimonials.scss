@@ -46,3 +46,56 @@
 		}
 	}
 }
+
+@media (max-width: 800px) {
+	#aboutTest {
+		section {
+			div.container {
+				div.testimonials {
+					grid-template-columns: repeat(2, 1fr);
+
+					div {
+						ul {
+							justify-content: center;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 500px) {
+	#aboutTest {
+		section {
+			div.container {
+				div.testimonials {
+					grid-template-columns: 1fr;
+
+					div:nth-child(even) {
+						ul {
+							justify-content: flex-start;
+							flex-direction: row-reverse;
+
+							li {
+								img {
+									margin: 0 0 0 0.9rem;
+								}
+							}
+						}
+
+						p {
+							text-align: end;
+						}
+					}
+
+					div:nth-child(odd) {
+						ul {
+							justify-content: flex-start;
+						}
+					}
+				}
+			}
+		}
+	}
+}

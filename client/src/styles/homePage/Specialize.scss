@@ -31,3 +31,25 @@
 		}
 	}
 }
+
+@media (max-width: 500px) {
+	#specialize {
+		section {
+			div.container {
+				div.specials {
+					grid-template-columns: 1fr;
+
+					div {
+						border-bottom: 1px solid vars.$medColor;
+						padding: 0 0 1rem 0;
+
+						&:last-child {
+							border: none;
+							padding: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+}

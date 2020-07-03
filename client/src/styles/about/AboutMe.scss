@@ -59,3 +59,23 @@ div#about {
 		}
 	}
 }
+
+@media (max-width: 500px) {
+	div#about {
+		div.container {
+			div.info {
+				grid-template-areas:
+					"image"
+					"bio"
+					"award1"
+					"award2"
+					"award3";
+
+				.bio {
+					border-left: none;
+					border-bottom: 2px solid vars.$mainColor;
+				}
+			}
+		}
+	}
+}
