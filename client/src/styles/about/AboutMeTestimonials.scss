@@ -46,3 +46,21 @@
 		}
 	}
 }
+
+@media (max-width: 800px) {
+	#aboutTest {
+		section {
+			div.container {
+				div.testimonials {
+					grid-template-columns: repeat(2, 1fr);
+
+					div {
+						ul {
+							justify-content: center;
+						}
+					}
+				}
+			}
+		}
+	}
+}
