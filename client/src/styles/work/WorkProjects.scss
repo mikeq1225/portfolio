@@ -111,3 +111,13 @@ div#workProjects {
 		}
 	}
 }
+
+@media (max-width: 500px) {
+	div#workProjects {
+		div.container {
+			div.projects {
+				grid-template-columns: 1fr;
+			}
+		}
+	}
+}

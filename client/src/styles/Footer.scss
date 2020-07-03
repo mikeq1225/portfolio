@@ -3,12 +3,10 @@
 div#footer {
 	background: vars.$darkColor;
 	color: vars.$lightColor;
-	height: 6rem;
 
 	div.content {
 		display: flex;
 		justify-content: space-between;
-		height: 6rem;
 		align-items: center;
 
 		p {
@@ -29,6 +27,23 @@ div#footer {
 						transition: 0.3s;
 					}
 				}
+			}
+		}
+	}
+}
+
+@media (max-width: 500px) {
+	div#footer {
+		div.content {
+			flex-direction: column-reverse;
+			padding: 1rem;
+
+			div.social {
+				padding: 0 0 1rem 0;
+				width: 100%;
+				display: flex;
+				justify-content: space-evenly;
+				align-items: center;
 			}
 		}
 	}

@@ -49,12 +49,48 @@
 
 @media (max-width: 500px) {
 	#showcase {
-		height: 0vh;
+		display: none;
 
 		header {
 			.container {
 				div.headerContent {
 					display: none;
+				}
+			}
+		}
+	}
+}
+
+@media (max-height: 580px) {
+	#showcase {
+		height: 75vh;
+
+		header {
+			.container {
+				div.headerContent {
+					padding: 3rem 0 0 0;
+				}
+			}
+		}
+	}
+}
+
+@media (max-height: 330px) {
+	#showcase {
+		height: 75vh;
+
+		header {
+			.container {
+				padding: 1rem;
+
+				div.headerContent {
+					h1 {
+						font-size: 2rem;
+					}
+
+					a {
+						font-size: 1.1rem;
+					}
 				}
 			}
 		}

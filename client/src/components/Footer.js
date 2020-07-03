@@ -7,7 +7,10 @@ export default (props) => {
 		<div id="footer">
 			<footer>
 				<div className="content container">
-					<p>Copyright © 2020. All rights reserved</p>
+					<div>
+						<p>Copyright © 2020. All rights reserved</p>
+						<p>Designed by Michael Quarne</p>
+					</div>
 					<div className="social">
 						<a
 							href="https://github.com/mikeq1225"

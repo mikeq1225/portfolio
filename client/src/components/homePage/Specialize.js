@@ -17,8 +17,8 @@ export default (props) => {
 					<h2 className="sectionTitle">I Specialize In</h2>
 					<div className="bottomLine"></div>
 					<p className="lead">
-						Making the customer's needs dictate design and making responsive
-						websites
+						Allowing the customer's needs to dictate design while keeping
+						responsive design at the forefront
 					</p>
 					<div className="specials">
 						<IconContext.Provider value={{ size: "4rem" }}>
