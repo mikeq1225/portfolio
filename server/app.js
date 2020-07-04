@@ -31,24 +31,6 @@ const workItems = [
 	},
 	{
 		id: 2,
-		title: "ChatRoom",
-		subtitle: "8th project",
-		brief: "Front & backend clone of Slack",
-		category: "Web Application",
-		description:
-			"A week long project the whole class worked on together. We all wrote our own code, but we did the planning side of things as a group.  We had to plan the project from scratch to copy Slack features in an Agile type setting with daily meetings.",
-		problem:
-			"What is the proper way to plan, track, and execute a larger project while incorporating authentication.",
-		lessons:
-			"I learned how to use GitHub's Projects tab to create tickets, assign them, and track the progress of the project.  I also created an MVP (minimum viable project) as well as future features for the project.  I also learned the basics of authentication and validation.",
-		tech:
-			"HTML, CSS, JavaScript, React, Redux, Node.js, Express, Socekt.IO, MySQL",
-		image: "/assets/chatRoom1.png",
-		image2: "/assets/chatRoom2.png",
-		link: "https://github.com/mikeq1225/chatRoom",
-	},
-	{
-		id: 3,
 		title: "RyansList",
 		subtitle: "7th project",
 		brief: "Front & backend clone of CraigsList",
@@ -65,7 +47,7 @@ const workItems = [
 		link: "https://mighty-garden-83965.herokuapp.com/",
 	},
 	{
-		id: 4,
+		id: 3,
 		title: "Shopping Cart",
 		subtitle: "6th project",
 		brief: "First project with Redux",
@@ -82,7 +64,7 @@ const workItems = [
 		link: "https://mikeq1225.github.io/react-shopping-cart/",
 	},
 	{
-		id: 5,
+		id: 4,
 		title: "Mustang Photo Album",
 		subtitle: "5th project",
 		brief: "First project with React",
@@ -99,7 +81,7 @@ const workItems = [
 		link: "https://cryptic-dusk-52003.herokuapp.com/",
 	},
 	{
-		id: 6,
+		id: 5,
 		title: "Superman Memory Game",
 		subtitle: "4th project",
 		brief: "DOM manipulation with jQuery",
@@ -111,12 +93,12 @@ const workItems = [
 		lessons:
 			"I learned how to use jQuery to manipulate the DOM based on the winning or losing as well as using CSS animations for the card flips.",
 		tech: "HTML, CSS, JavaScript, jQuery",
-		image: "/assets/memory1.png",
+		image: "/assets/supermanVSluthor.jpg",
 		image2: "/assets/memory2.png",
 		link: "https://mikeq1225.github.io/Memory/",
 	},
 	{
-		id: 7,
+		id: 6,
 		title: "BarCade Restaurant",
 		subtitle: "3rd project",
 		brief: "Group Project of a fictional restaurant",
@@ -128,12 +110,12 @@ const workItems = [
 		lessons:
 			"I learned how to use Github's branches to ensure my team could work on the same website but in different sections to avoid conflicts.",
 		tech: "HTML, CSS, JavaScript, jQuery, GitHub",
-		image: "/assets/GroupProject.png",
+		image: "/assets/barCade1.jpg",
 		image2: "/assets/GroupProject.png",
 		link: "https://mikeq1225.github.io/Group-Project/",
 	},
 	{
-		id: 8,
+		id: 7,
 		title: "Etsy Search Page",
 		subtitle: "2nd project",
 		brief: "HTML recreation with JavaScript",
@@ -149,7 +131,7 @@ const workItems = [
 		link: "https://mikeq1225.github.io/Create-Etsy-Search-Page/",
 	},
 	{
-		id: 9,
+		id: 8,
 		title: "Ska8er Site",
 		subtitle: "1st project",
 		brief: "HTML recreation",
@@ -164,6 +146,39 @@ const workItems = [
 		image: "/assets/Ska8er_Site.png",
 		image2: "/assets/Ska8er_Site.png",
 		link: "https://mikeq1225.github.io/Sk8er-Site/",
+	},
+	{
+		id: 9,
+		title: "Edge Ledger",
+		subtitle: "Responsive Design",
+		brief: "Responsive Web Design",
+		category: "Website",
+		description: "A fictional website used to practice responsive web design.",
+		problem: "How to make a website responsive no matter the layout.",
+		lessons:
+			"I learned how to use GitHub's Projects tab to create tickets, assign them, and track the progress of the project.  I also created an MVP (minimum viable project) as well as future features for the project.  I also learned the basics of authentication and validation.",
+		tech:
+			"HTML, CSS, JavaScript, React, Redux, Node.js, Express, Socekt.IO, MySQL",
+		image: "/assets/edgeLedger.jpg",
+		image2: "/assets/edgeLedger.jpg",
+		link: "https://github.com/mikeq1225/chatRoom",
+	},
+	{
+		id: 10,
+		title: "News Grid",
+		subtitle: "8th project",
+		brief: "Front & backend clone of Slack",
+		category: "Web Application",
+		description:
+			"A fictional website used to practice responsive web design specifically using grid.",
+		problem: "How to make a website responsive no matter the layout.",
+		lessons:
+			"I learned how to use GitHub's Projects tab to create tickets, assign them, and track the progress of the project.  I also created an MVP (minimum viable project) as well as future features for the project.  I also learned the basics of authentication and validation.",
+		tech:
+			"HTML, CSS, JavaScript, React, Redux, Node.js, Express, Socekt.IO, MySQL",
+		image: "/assets/chatRoom1.png",
+		image2: "/assets/chatRoom2.png",
+		link: "https://github.com/mikeq1225/chatRoom",
 	},
 ]
 

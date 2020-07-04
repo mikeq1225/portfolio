@@ -19,19 +19,19 @@
 .button {
 	&Main {
 		@extend %buttonShared;
-		color: #333;
+		color: vars.setTextColor(vars.$mainColor);
 		background-color: vars.$mainColor;
 	}
 
 	&Light {
 		@extend %buttonShared;
-		color: #333;
+		color: vars.setTextColor(vars.$lightColor);
 		background-color: vars.$lightColor;
 	}
 
 	&Dark {
 		@extend %buttonShared;
-		color: #f4f4f4;
+		color: vars.setTextColor(vars.$darkColor);
 		background-color: vars.$darkColor;
 	}
 }
@@ -40,6 +40,7 @@ button[class^="button"]:hover,
 a[class^="button"]:hover,
 input[class^="button"]:hover {
 	background-color: vars.$medColor;
+	color: vars.setTextColor(vars.$medColor);
 }
 
 // Backgrounds
