@@ -14,7 +14,7 @@ export default (props) => {
 			<div className="container">
 				<h2 className="sectionTitle">More Work</h2>
 				<div className="bottomLine"></div>
-				<p className="lead textCenter">Check out some of my other projects</p>
+				<p className="textCenter">Check out some of my other projects</p>
 				<p className="lead textCenter">
 					Click project to go to application or website
 				</p>

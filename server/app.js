@@ -30,6 +30,23 @@ const workItems = [
 		link3: "https://www.youtube.com/watch?v=IgaI8lv1QOQ&feature=youtu.be",
 	},
 	{
+		id: 4,
+		title: "Mustang Photo Album",
+		subtitle: "5th project",
+		brief: "Project with React",
+		category: "React & Redux",
+		description:
+			"A photo album based an a topic of our choosing. We were given the wireframe layout of each page and we had to replicate it.  We also had to create our own data set in a JSON file and be able to dynamically display that data.",
+		problem:
+			"How to create different routes within a single page application to make it appear as though the user was navigating to a new page.",
+		lessons:
+			"I learned how to use React Router to create the routes for each component and make it possible to switch between those routes without reloading the page.",
+		tech: "HTML, CSS, JavaScript, React, React Router, JSON-Server",
+		image: "/assets/mustang.jpg",
+		image2: "/assets/photoAlbum2.png",
+		link: "https://cryptic-dusk-52003.herokuapp.com/",
+	},
+	{
 		id: 2,
 		title: "RyansList",
 		subtitle: "7th project",
@@ -42,7 +59,7 @@ const workItems = [
 		lessons:
 			"I learned how to construct useful and concise MySQL queries to retrieve date from and add data to the database.",
 		tech: "HTML, CSS, JavaScript, React, Redux, Node.js, Express, MySQL",
-		image: "/assets/ryan_listScreenshot.png",
+		image: "/assets/ryanList.jpg",
 		image2: "/assets/ryanList2.png",
 		link: "https://mighty-garden-83965.herokuapp.com/",
 	},
@@ -50,7 +67,7 @@ const workItems = [
 		id: 3,
 		title: "Shopping Cart",
 		subtitle: "6th project",
-		brief: "First project with Redux",
+		brief: "Project with React & Redux",
 		category: "React & Redux",
 		description:
 			"Our first steps in React. We had to recreate a T-shirt website with the ability to add and delete in a cart as well as simulating a checkout/receipt screen.",
@@ -59,27 +76,11 @@ const workItems = [
 		lessons:
 			"I learned how to effectively use components to make my code more manageable as well as creating a seamless experience for the user. I also learned how to use Redux to monitor the state of items in the cart as well as some new CSS properties.",
 		tech: "HTML, CSS, JavaScript, React, Redux, Node.js, JSON-Server",
-		image: "/assets/ReactShoppingCart.png",
+		image: "/assets/shoppingCart.jpg",
 		image2: "/assets/ReactShoppingCart2.png",
 		link: "https://mikeq1225.github.io/react-shopping-cart/",
 	},
-	{
-		id: 4,
-		title: "Mustang Photo Album",
-		subtitle: "5th project",
-		brief: "First project with React",
-		category: "React & Redux",
-		description:
-			"A photo album based an a topic of our choosing. We were given the wireframe layout of each page and we had to replicate it.  We also had to create our own data set in a JSON file and be able to dynamically display that data.",
-		problem:
-			"How to create different routes within a single page application to make it appear as though the user was navigating to a new page.",
-		lessons:
-			"I learned how to use React Router to create the routes for each component and make it possible to switch between those routes without reloading the page.",
-		tech: "HTML, CSS, JavaScript, React, React Router, JSON-Server",
-		image: "/assets/photoAlbum1.png",
-		image2: "/assets/photoAlbum2.png",
-		link: "https://cryptic-dusk-52003.herokuapp.com/",
-	},
+
 	{
 		id: 5,
 		title: "Superman Memory Game",
@@ -115,6 +116,37 @@ const workItems = [
 		link: "https://mikeq1225.github.io/Group-Project/",
 	},
 	{
+		id: 9,
+		title: "Edge Ledger",
+		subtitle: "Responsive Design",
+		brief: "Responsive Web Design",
+		category: "Website",
+		description: "A fictional website used to practice responsive web design.",
+		problem: "How to make a website responsive no matter the layout.",
+		lessons:
+			"I learned how to use modern HTML and CSS to make a clean responsive website.",
+		tech: "HTML, CSS, JavaScript",
+		image: "/assets/edgeLedger.jpg",
+		image2: "/assets/edgeLedger.jpg",
+		link: "https://mikeq1225.github.io/Edge_Ledger/",
+	},
+	{
+		id: 10,
+		title: "News Grid",
+		subtitle: "8th project",
+		brief: "Responsive Web Design",
+		category: "Website",
+		description:
+			"A fictional website used to practice responsive web design specifically using grid.",
+		problem: "How to make a website responsive no matter the layout.",
+		lessons:
+			"I learned how to use modern HTML and CSS to make a clean responsive website.",
+		tech: "HTML, CSS, JavaScript",
+		image: "/assets/newsGrid.jpg",
+		image2: "/assets/newsGrid.jpg",
+		link: "https://mikeq1225.github.io/NewsGrid/index.html",
+	},
+	{
 		id: 7,
 		title: "Etsy Search Page",
 		subtitle: "2nd project",
@@ -126,8 +158,8 @@ const workItems = [
 		lessons:
 			"This was our first step into JavaScript. I also learned how to use jQuery to create a template to map through and display the data.",
 		tech: "HTML, CSS, JavaScript, jQuery",
-		image: "/assets/RecreateEtsy.png",
-		image2: "/assets/RecreateEtsy.png",
+		image: "/assets/etsy.jpg",
+		image2: "/assets/etsy.jpg",
 		link: "https://mikeq1225.github.io/Create-Etsy-Search-Page/",
 	},
 	{
@@ -143,42 +175,9 @@ const workItems = [
 		lessons:
 			"I learned how to use CSS Grid and Flexbox quite well. Also learned how to use pseudo elements.",
 		tech: "HTML, CSS",
-		image: "/assets/Ska8er_Site.png",
-		image2: "/assets/Ska8er_Site.png",
+		image: "/assets/skaterSite.jpg",
+		image2: "/assets/skaterSite.png",
 		link: "https://mikeq1225.github.io/Sk8er-Site/",
-	},
-	{
-		id: 9,
-		title: "Edge Ledger",
-		subtitle: "Responsive Design",
-		brief: "Responsive Web Design",
-		category: "Website",
-		description: "A fictional website used to practice responsive web design.",
-		problem: "How to make a website responsive no matter the layout.",
-		lessons:
-			"I learned how to use GitHub's Projects tab to create tickets, assign them, and track the progress of the project.  I also created an MVP (minimum viable project) as well as future features for the project.  I also learned the basics of authentication and validation.",
-		tech:
-			"HTML, CSS, JavaScript, React, Redux, Node.js, Express, Socekt.IO, MySQL",
-		image: "/assets/edgeLedger.jpg",
-		image2: "/assets/edgeLedger.jpg",
-		link: "https://github.com/mikeq1225/chatRoom",
-	},
-	{
-		id: 10,
-		title: "News Grid",
-		subtitle: "8th project",
-		brief: "Front & backend clone of Slack",
-		category: "Web Application",
-		description:
-			"A fictional website used to practice responsive web design specifically using grid.",
-		problem: "How to make a website responsive no matter the layout.",
-		lessons:
-			"I learned how to use GitHub's Projects tab to create tickets, assign them, and track the progress of the project.  I also created an MVP (minimum viable project) as well as future features for the project.  I also learned the basics of authentication and validation.",
-		tech:
-			"HTML, CSS, JavaScript, React, Redux, Node.js, Express, Socekt.IO, MySQL",
-		image: "/assets/chatRoom1.png",
-		image2: "/assets/chatRoom2.png",
-		link: "https://github.com/mikeq1225/chatRoom",
 	},
 ]
 
