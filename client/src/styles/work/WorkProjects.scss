@@ -118,7 +118,7 @@ div#workProjects {
 	}
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1025px) {
 	div#workProjects {
 		div.container {
 			div.projects {
@@ -128,7 +128,15 @@ div#workProjects {
 				a {
 					div.project {
 						div.projectImage {
-							max-height: 200px;
+							max-height: 195px;
+						}
+					}
+				}
+
+				a {
+					div.project {
+						div.projectText {
+							opacity: 1;
 						}
 					}
 				}
@@ -165,25 +173,6 @@ div#workProjects {
 					div.project {
 						div.projectImage {
 							max-height: 150px;
-						}
-					}
-				}
-			}
-		}
-	}
-}
-
-@media (orientation: landscape) {
-	div#workProjects {
-		div.container {
-			div.projects {
-				grid-template-columns: 1fr;
-				grid-gap: 1rem;
-
-				a {
-					div.project {
-						div.projectText {
-							opacity: 1;
 						}
 					}
 				}
