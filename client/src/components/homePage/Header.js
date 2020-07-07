@@ -1,7 +1,6 @@
 import React, { useEffect } from "react"
 import { Link } from "react-router-dom"
 import "../../styles/homePage/Header.scss"
-// import "../../typewriter.js"
 
 export default (props) => {
 	class TypeWriter {

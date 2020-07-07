@@ -2,25 +2,48 @@
 
 #workFeature {
 	div.container {
-		// img {
-		// }
+		p {
+			font-size: 2rem;
+		}
 
-		div {
-			h1 {
-				font-size: 2.5rem;
-			}
+		h1 {
+			margin: 2rem 0;
+			font-size: 3rem;
+			color: vars.$featuredColor;
+		}
 
-			h2 {
+		& > div:nth-child(5) {
+			display: flex;
+			justify-content: space-around;
+			margin: 1rem 0;
+
+			a {
 				font-size: 2rem;
 			}
+		}
 
-			p {
-				font-size: 1.5rem;
+		.featureContainer {
+			display: grid;
+			grid-template-columns: 30% auto;
+			justify-items: center;
+
+			img {
+				width: 90%;
 			}
 
 			div {
 				display: flex;
-				justify-content: space-between;
+				flex-direction: column;
+				align-items: center;
+				padding: 2rem;
+
+				h2 {
+					font-size: 2.2rem;
+				}
+
+				p {
+					font-size: 2rem;
+				}
 			}
 		}
 	}

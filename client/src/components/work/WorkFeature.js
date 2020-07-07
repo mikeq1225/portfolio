@@ -14,46 +14,49 @@ export default (props) => {
 			<div className="container">
 				<h2 className="sectionTitle">Featured Project</h2>
 				<div className="bottomLine"></div>
-				<p className="lead textCenter">
-					Feel free to check out {`Jurn(ease)`}. Register a made up account and
-					look around inside the site
+				<p className="textCenter">
+					Click "Live Application" to check out the application. Register a made
+					up account and look around inside the application.
 				</p>
-				<img src={feature.image} alt={feature.title + " replica"} />
+				<h1 className="textCenter">{feature.title}</h1>
 				<div>
-					<h1>{feature.title}</h1>
-					<p>Description:</p>
-					<h2>{feature.description}</h2>
-					<p>Issues Faced:</p>
-					<h2>{feature.problem}</h2>
-					<p>Lessons Learned:</p>
-					<h2>{feature.lessons}</h2>
-					<p>Languages/Technologies Used:</p>
-					<h2>{feature.tech}</h2>
+					<a
+						className="buttonFeatured"
+						href={feature.link}
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						{feature.title} Live Application
+					</a>
+					<a
+						className="buttonFeatured"
+						href={feature.link2}
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						{feature.title} Presentation
+					</a>
+					<a
+						className="buttonFeatured"
+						href={feature.link3}
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						{feature.title} Demonstration
+					</a>
+				</div>
+
+				<div className="featureContainer">
+					<img src={feature.image} alt={feature.title + " replica"} />
 					<div>
-						<a
-							className="buttonMain"
-							href={feature.link}
-							target="_blank"
-							rel="noopener noreferrer"
-						>
-							<h2>{feature.title} Live Application</h2>
-						</a>
-						<a
-							className="buttonMain"
-							href={feature.link2}
-							target="_blank"
-							rel="noopener noreferrer"
-						>
-							<h2>{feature.title} Presentation</h2>
-						</a>
-						<a
-							className="buttonMain"
-							href={feature.link3}
-							target="_blank"
-							rel="noopener noreferrer"
-						>
-							<h2>{feature.title} Demonstration</h2>
-						</a>
+						{/* <h2>Description:</h2> */}
+						<p>{feature.description}</p>
+						<h2>Where did the idea come from?</h2>
+						<p>{feature.problem}</p>
+						<h2>What did I learn from this?</h2>
+						<p>{feature.lessons}</p>
+						<h2>Languages/Technologies Used:</h2>
+						<p>{feature.tech}</p>
 					</div>
 				</div>
 			</div>
