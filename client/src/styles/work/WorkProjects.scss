@@ -138,6 +138,8 @@ div#workProjects {
 
 @media (max-width: 500px) {
 	div#workProjects {
+		padding: 0 0 1rem 0;
+
 		div.container {
 			div.projects {
 				grid-gap: 1rem;

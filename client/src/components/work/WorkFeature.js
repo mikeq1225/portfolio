@@ -14,11 +14,11 @@ export default (props) => {
 			<div className="container">
 				<h2 className="sectionTitle">Featured Project</h2>
 				<div className="bottomLine"></div>
+				<h1 className="textCenter">{feature.title}</h1>
 				<p className="textCenter">
 					Click "Jurn(ease) Live" to check out the application. Register a made
 					up account to look around inside.
 				</p>
-				<h1 className="textCenter">{feature.title}</h1>
 				<div>
 					<a
 						className="buttonFeatured"
@@ -49,7 +49,6 @@ export default (props) => {
 				<div className="featureContainer">
 					<img src={feature.image} alt={feature.title + " replica"} />
 					<div>
-						{/* <h2>Description:</h2> */}
 						<p>{feature.description}</p>
 						<h2>Where did the idea come from?</h2>
 						<p>{feature.problem}</p>
