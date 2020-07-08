@@ -15,8 +15,8 @@ export default (props) => {
 				<h2 className="sectionTitle">Featured Project</h2>
 				<div className="bottomLine"></div>
 				<p className="textCenter">
-					Click "Live Application" to check out the application. Register a made
-					up account and look around inside the application.
+					Click "Jurn(ease) Live" to check out the application. Register a made
+					up account to look around inside.
 				</p>
 				<h1 className="textCenter">{feature.title}</h1>
 				<div>
@@ -26,7 +26,7 @@ export default (props) => {
 						target="_blank"
 						rel="noopener noreferrer"
 					>
-						{feature.title} Live Application
+						{feature.title} Live
 					</a>
 					<a
 						className="buttonFeatured"
