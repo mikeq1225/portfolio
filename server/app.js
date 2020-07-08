@@ -16,13 +16,13 @@ const workItems = [
 		brief: "Complete web application",
 		category: "Web Application",
 		description:
-			"A travel planning application that allows multiple users to plan group vacations in the same place.  They can create Jurn(e)s, or trips, and invite others to join.  Then everyone on the Jurn(e) can decide where to go, what do to, and where to stay.",
+			"Jurn(ease) is a travel planning application that allows multiple users to plan group vacations in the same place.  They can create Jurn(e)s, or trips, and invite others to join.  Then everyone on the Jurn(e) can decide where to go, what do to, and where to stay.",
 		problem:
-			"How do you take an idea from conception to a finished application.",
+			"My co-creator and I wanted to learn the lifecycle process of building an application.  We come up with the concept, wrote the code, tested the code and application, and finally deployed it on the internet.",
 		lessons:
-			"I learned how to plan and execute a large project, how to take all the languages and tools from class and apply them to one project, how to use AWS as a remote MySQL database for our project, and I learned how to accomplish all of this while working remotely.",
+			"I learned how to plan and execute a large project, how to take all the languages and tools that I've learned and apply them to one project, how to use AWS as a remote MySQL database for our project, and I learned how to accomplish all of this while working in a remote environment.",
 		tech:
-			"HTML, CSS, Sass, Semantic UI, JavaScript, React, Redux, Node.js, Express, MySQL, AWS-RDS, Slack, Zoom",
+			"HTML, CSS, Sass, Semantic UI, JavaScript, React, Redux, Node.js, Express, REST APIs, MySQL, AWS-RDS, Slack, Zoom",
 		image: "/assets/JurnEaseScreenShot.png",
 		image2: "/assets/Jurnease2.png",
 		link: "https://aqueous-refuge-23431.herokuapp.com",

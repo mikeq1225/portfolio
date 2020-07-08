@@ -1,7 +1,6 @@
 import React, { useEffect } from "react"
 import { Link } from "react-router-dom"
 import "../../styles/homePage/Header.scss"
-// import "../../typewriter.js"
 
 export default (props) => {
 	class TypeWriter {
@@ -90,7 +89,7 @@ export default (props) => {
 						<p className="lead">
 							I specialize in web applications with a focus on UX/UI Design
 						</p>
-						<Link to="/Projects" className="buttonDark">
+						<Link to="/Work" className="buttonMain">
 							View My Work
 						</Link>
 					</div>

@@ -54,7 +54,7 @@ div#workProjects {
 						display: block;
 						transform: translateZ(0);
 						transition: transform 0.75s cubic-bezier(0.2, 1, 0.3, 1);
-						max-height: 220px;
+						// max-height: 220px;
 
 						&:before {
 							content: "";
@@ -124,15 +124,6 @@ div#workProjects {
 			div.projects {
 				grid-template-columns: 1fr 1fr;
 				grid-gap: 1rem;
-
-				a {
-					div.project {
-						div.projectImage {
-							max-height: 195px;
-						}
-					}
-				}
-
 				a {
 					div.project {
 						div.projectText {
@@ -150,32 +141,7 @@ div#workProjects {
 		div.container {
 			div.projects {
 				grid-gap: 1rem;
-
-				a {
-					div.project {
-						div.projectImage {
-							max-height: 185px;
-						}
-					}
-				}
-			}
-		}
-	}
-}
-
-@media (min-width: 300px) and (max-width: 500px) {
-	div#workProjects {
-		div.container {
-			div.projects {
 				grid-template-columns: 1fr;
-
-				a {
-					div.project {
-						div.projectImage {
-							max-height: 150px;
-						}
-					}
-				}
 			}
 		}
 	}

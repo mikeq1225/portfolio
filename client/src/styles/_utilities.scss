@@ -34,13 +34,28 @@
 		color: vars.setTextColor(vars.$darkColor);
 		background-color: vars.$darkColor;
 	}
+
+	&Featured {
+		@extend %buttonShared;
+		color: vars.setTextColor(vars.$featuredColor);
+		background-color: vars.$featuredColor;
+		border: 1px solid transparent;
+		border-radius: 5px;
+	}
 }
 
 button[class^="button"]:hover,
-a[class^="button"]:hover,
+a.buttonMain:hover,
+a.buttonLight:hover,
+a.buttonDark:hover,
 input[class^="button"]:hover {
 	background-color: vars.$medColor;
 	color: vars.setTextColor(vars.$medColor);
+}
+
+.buttonFeatured:hover {
+	background: lighten(vars.$featuredColor, 8%);
+	border: 1px solid vars.$highlightColor;
 }
 
 // Backgrounds
