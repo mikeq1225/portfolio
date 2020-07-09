@@ -71,7 +71,7 @@ export default (props) => {
 
 	useEffect(() => {
 		init()
-	}, [])
+	})
 
 	return (
 		<div id="showcase">
