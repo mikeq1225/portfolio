@@ -17,8 +17,6 @@ export default (props) => {
 			arrow = e.target.parentNode
 		}
 
-		console.log(arrow)
-
 		if (para.classList.contains("hide")) {
 			arrow.classList.toggle("rotate")
 			para.classList.remove("hide")
@@ -162,19 +160,17 @@ export default (props) => {
 								<li>
 									<div>
 										<div>
-											<a
-												href="https://www.snhu.edu/"
-												target="_blank"
-												rel="noopener noreferrer"
-											>
-												Southern New Hampshire University
-											</a>
-											<p>Jan. 2018 - Aug. 2019</p>
+											<h2>Breakthru Beverage</h2>
+											<p>North Las Vegas, NV</p>
 										</div>
-										<h3>Associate in Science in Information Technologies</h3>
+										<div>
+											<h4>Merchandiser</h4>
+											<p>Sept. 2017 - Jan. 2020</p>
+										</div>
 										<p>
-											Courses include: Intro to Scripting, Applied Statistics
-											for STEM, and Project Management in Info Tech
+											Organized record keeping using Google Drive making them
+											user friendly, easy to search, and easily accessed by
+											several people at once
 										</p>
 									</div>
 								</li>

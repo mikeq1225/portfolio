@@ -73,7 +73,8 @@
 						}
 					}
 
-					&#education {
+					&#education,
+					&#employment {
 						ul.panel {
 							li {
 								margin: 0;
@@ -90,6 +91,7 @@
 										flex-direction: row;
 										justify-content: space-between;
 										width: 100%;
+										line-height: 1;
 
 										a {
 											color: vars.$darkColor;
@@ -100,6 +102,24 @@
 
 								&:first-child {
 									margin: 0 0 2rem 0;
+								}
+							}
+						}
+					}
+
+					&#employment {
+						ul.panel {
+							li {
+								div {
+									&:nth-child(2) {
+										margin: 0.4rem 0 0 0;
+									}
+
+									div {
+										h2 {
+											color: vars.$darkColor;
+										}
+									}
 								}
 							}
 						}
