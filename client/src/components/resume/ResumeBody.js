@@ -5,12 +5,26 @@ import { FaChevronRight } from "react-icons/fa"
 export default (props) => {
 	function display(e) {
 		e.preventDefault()
-		let para = e.target.closest("div").nextElementSibling
+		const para = e.target.closest("div").nextElementSibling
+		let arrow = e.target.nodeName
+		if (arrow === "DIV") {
+			arrow = e.target.firstChild
+		} else if (arrow === "H2") {
+			arrow = e.target.previousSibling
+		} else if (arrow === "svg") {
+			arrow = e.target
+		} else if (arrow === "path") {
+			arrow = e.target.parentNode
+		}
+
+		console.log(arrow)
 
 		if (para.classList.contains("hide")) {
+			arrow.classList.toggle("rotate")
 			para.classList.remove("hide")
 			para.classList.add("show")
 		} else if (para.classList.contains("show")) {
+			arrow.classList.toggle("rotate")
 			para.classList.remove("show")
 			para.classList.add("hide")
 		}
@@ -33,7 +47,7 @@ export default (props) => {
 								junior-level software engineering role.
 							</p>
 						</li>
-						<li className="skills">
+						<li id="skills">
 							<div className="title" onClick={(e) => display(e)}>
 								<FaChevronRight />
 								<h2>Skills</h2>
@@ -93,29 +107,78 @@ export default (props) => {
 								junior-level software engineering role.
 							</p>
 						</li>
-						<li>
+						<li id="education">
 							<div className="title" onClick={(e) => display(e)}>
 								<FaChevronRight />
 								<h2>Education</h2>
 							</div>
-							<p className="panel hide">
-								Creative, technical, design-savvy recent coding program graduate
-								fluent in JavaScript, HTML, and CSS. Excited to blend
-								professional experience with hands-on technical training in a
-								junior-level software engineering role.
-							</p>
+							<ul className="panel hide">
+								<li>
+									<div>
+										<div>
+											<a
+												href="https://punchcode.org/"
+												target="_blank"
+												rel="noopener noreferrer"
+											>
+												PunchCode
+											</a>
+											<p>Jan. 2020 - Apr. 2020</p>
+										</div>
+										<h3>Full-Stack Web Developer Bootcamp</h3>
+										<p>
+											Intense 3 month full-time boot-camp program in which I
+											learned to build complete web applications
+										</p>
+									</div>
+								</li>
+								<li>
+									<div>
+										<div>
+											<a
+												href="https://www.snhu.edu/"
+												target="_blank"
+												rel="noopener noreferrer"
+											>
+												Southern New Hampshire University
+											</a>
+											<p>Jan. 2018 - Aug. 2019</p>
+										</div>
+										<h3>Associate in Science in Information Technologies</h3>
+										<p>
+											Courses include: Intro to Scripting, Applied Statistics
+											for STEM, and Project Management in Info Tech
+										</p>
+									</div>
+								</li>
+							</ul>
 						</li>
-						<li>
+						<li id="employment">
 							<div className="title" onClick={(e) => display(e)}>
 								<FaChevronRight />
 								<h2>Employment</h2>
 							</div>
-							<p className="panel hide">
-								Creative, technical, design-savvy recent coding program graduate
-								fluent in JavaScript, HTML, and CSS. Excited to blend
-								professional experience with hands-on technical training in a
-								junior-level software engineering role.
-							</p>
+							<ul className="panel hide">
+								<li>
+									<div>
+										<div>
+											<a
+												href="https://www.snhu.edu/"
+												target="_blank"
+												rel="noopener noreferrer"
+											>
+												Southern New Hampshire University
+											</a>
+											<p>Jan. 2018 - Aug. 2019</p>
+										</div>
+										<h3>Associate in Science in Information Technologies</h3>
+										<p>
+											Courses include: Intro to Scripting, Applied Statistics
+											for STEM, and Project Management in Info Tech
+										</p>
+									</div>
+								</li>
+							</ul>
 						</li>
 					</ul>
 					<a
