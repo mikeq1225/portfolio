@@ -27,7 +27,7 @@ export default (props) => {
 							<FaLinkedinIn />
 						</a>
 						<a
-							href="https://www.facebook.com/mquarne"
+							href="https://www.facebook.com/mikequarne"
 							target="_blank"
 							rel="noopener noreferrer"
 						>

@@ -71,7 +71,7 @@ export default (props) => {
 
 	useEffect(() => {
 		init()
-	}, [])
+	})
 
 	return (
 		<div id="showcase">
@@ -87,7 +87,7 @@ export default (props) => {
 							></span>
 						</h1>
 						<p className="lead">
-							I specialize in web applications with a focus on UX/UI Design
+							I build web applications with a focus on UX/UI Design
 						</p>
 						<Link to="/Work" className="buttonMain">
 							View My Work
