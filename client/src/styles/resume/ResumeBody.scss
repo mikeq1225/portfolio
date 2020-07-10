@@ -50,7 +50,7 @@
 					}
 
 					&#skills {
-						ul {
+						ul.panel {
 							li {
 								font-weight: bold;
 								text-transform: uppercase;
@@ -159,6 +159,42 @@
 				text-align: center;
 				color: vars.$mainColor;
 				font-size: 1.5rem;
+			}
+		}
+	}
+}
+
+@media (max-width: 800px) {
+	#resumeBody {
+		.container {
+			.resBody {
+				ul#accordion {
+					li {
+						&#skills {
+							ul.panel {
+								li {
+									flex-direction: column;
+
+									ul {
+										display: grid;
+										grid-template-columns: repeat(5, 1fr);
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 500px) {
+	#resumeBody {
+		.container {
+			.resBody {
+				ul#accordion {
+				}
 			}
 		}
 	}

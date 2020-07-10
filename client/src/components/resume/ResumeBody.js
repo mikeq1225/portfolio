@@ -20,9 +20,9 @@ export default (props) => {
 			let panels = document.getElementsByClassName("panel")
 			panels = Array.from(panels)
 			panels.forEach(function (panel, index) {
-				let arrow = panel.previousSibling.firstChild
-				arrow.classList.add("rotate")
 				setTimeout(function () {
+					let arrow = panel.previousSibling.firstChild
+					arrow.classList.add("rotate")
 					panel.classList.add("show")
 					panel.classList.remove("hide")
 				}, index * 1800)
