@@ -1,8 +1,35 @@
-import React from "react"
+import React, { useEffect } from "react"
+import { useProjects } from "../../hooks"
 import "../../styles/resume/ResumeBody.scss"
 import { FaChevronRight } from "react-icons/fa"
 
 export default (props) => {
+	const { feature, projects, fetchProjects } = useProjects()
+	const mustang = projects.find(
+		(project) => project.title === "Mustang Photo Album"
+	)
+	const ryan = projects.find((project) => project.title === "RyansList")
+	const superman = projects.find(
+		(project) => project.title === "Superman Memory Game"
+	)
+
+	document.addEventListener("DOMContentLoaded", start)
+
+	function start() {
+		setTimeout(() => {
+			let panels = document.getElementsByClassName("panel")
+			panels = Array.from(panels)
+			panels.forEach(function (panel, index) {
+				let arrow = panel.previousSibling.firstChild
+				arrow.classList.add("rotate")
+				setTimeout(function () {
+					panel.classList.add("show")
+					panel.classList.remove("hide")
+				}, index * 1800)
+			})
+		})
+	}
+
 	function display(e) {
 		e.preventDefault()
 		const para = e.target.closest("div").nextElementSibling
@@ -27,6 +54,11 @@ export default (props) => {
 			para.classList.add("hide")
 		}
 	}
+
+	useEffect(() => {
+		start()
+		fetchProjects()
+	}, [])
 
 	return (
 		<div id="resumeBody">
@@ -93,17 +125,56 @@ export default (props) => {
 								</li>
 							</ul>
 						</li>
-						<li>
+						<li id="projects">
 							<div className="title" onClick={(e) => display(e)}>
 								<FaChevronRight />
 								<h2>Projects</h2>
 							</div>
-							<p className="panel hide">
-								Creative, technical, design-savvy recent coding program graduate
-								fluent in JavaScript, HTML, and CSS. Excited to blend
-								professional experience with hands-on technical training in a
-								junior-level software engineering role.
-							</p>
+							<ul className="panel hide">
+								<li>
+									<a href={feature.link}>
+										<h2>Jurn(ease) vacation planning app</h2>
+									</a>
+									<h4>Capstone Project for PunchCode</h4>
+									<p>
+										Worked with a team remotely to plan, design, and build a
+										vacation planning web application using GitHub for version
+										control. Utilized JavaScript, React, Redux, HTML, Sass CSS
+										to build the front-end with Express and MySQL for the
+										back-end.
+									</p>
+								</li>
+								<li>
+									<a href={mustang && mustang.link}>
+										<h2>mustang photo album</h2>
+									</a>
+									<p>
+										Photo album using JavaScript with React and a MySQL database
+										to present images tied to specific Mustang Models in their
+										own folders. The code components can easily be used anywhere
+										a photo album is needed.
+									</p>
+								</li>
+								<li>
+									<a href={ryan && ryan.link}>
+										<h2>Ryan'sList</h2>
+									</a>
+									<p>
+										Created a replica "CraigsList" website using JavaScript,
+										React, and Redux on the front-end with Express and MySQL on
+										the back-end.
+									</p>
+								</li>
+								<li>
+									<a href={superman && superman.link}>
+										<h2>Superman memory game</h2>
+									</a>
+									<p>
+										A Superman memory game using JavaScript and jQuery to try to
+										prevent Lex Luthor from taking over the world.
+									</p>
+								</li>
+							</ul>
 						</li>
 						<li id="education">
 							<div className="title" onClick={(e) => display(e)}>
@@ -171,6 +242,56 @@ export default (props) => {
 											Organized record keeping using Google Drive making them
 											user friendly, easy to search, and easily accessed by
 											several people at once
+										</p>
+									</div>
+								</li>
+								<li>
+									<div>
+										<div>
+											<h2>Guaranty bank</h2>
+											<p>Sheboygan, WI</p>
+										</div>
+										<div>
+											<h4>Assistant Branch Manager</h4>
+											<p>Jan. 2017 - May. 2017</p>
+										</div>
+										<p>
+											Boosted branch results by 9% by strengthening
+											relationships with the client base and identifying sales
+											and service solutions tailored to client needs.
+										</p>
+										<p>
+											Increased transparency for executive management by
+											identifying trends and creating reports to monitor
+											deviations from targets for improved account and employee
+											management.
+										</p>
+									</div>
+								</li>
+								<li>
+									<div>
+										<div>
+											<h2>General Beverage</h2>
+											<p>New Berlin, WI</p>
+										</div>
+										<div>
+											<h4>Merchandising Department Manager</h4>
+											<p>Jan. 2004 - Sept. 2016</p>
+										</div>
+										<p>
+											Developed mentoring program to create a culture of upward
+											mobility within the company.
+										</p>
+										<p>
+											Steered daily operations and business development
+											initiatives by successfully managing 12 fulltime
+											merchandisers and 6 part-time merchandisers across 7
+											counties.
+										</p>
+										<p>
+											Facilitated a collaborative work environment where
+											problems were managed immediately by having open lines of
+											communication with entire team.
 										</p>
 									</div>
 								</li>

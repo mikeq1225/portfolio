@@ -1,7 +1,7 @@
 @use '../vars';
 
 #resumeBody {
-	// min-height: 70vh;
+	min-height: 68vh;
 
 	.container {
 		.resBody {
@@ -25,6 +25,7 @@
 							color: vars.$mainColor;
 							font-size: 2.1rem;
 							margin: 0 1rem;
+							transition: transform 0.5s ease;
 
 							&.rotate {
 								transform: rotate(90deg);
@@ -45,7 +46,7 @@
 
 					.show {
 						height: fit-content;
-						padding: 1.5rem;
+						padding: 1.5rem 1.5rem 0 1.5rem;
 					}
 
 					&#skills {
@@ -73,11 +74,32 @@
 						}
 					}
 
+					&#projects {
+						ul {
+							li {
+								a {
+									text-align: left;
+									text-decoration: underline;
+									text-decoration-color: vars.$darkColor;
+
+									h2 {
+										font-size: 2rem;
+										text-transform: uppercase;
+										font-weight: normal;
+										color: vars.$darkColor;
+										cursor: pointer;
+									}
+								}
+							}
+						}
+					}
+
 					&#education,
-					&#employment {
+					&#employment,
+					&#projects {
 						ul.panel {
 							li {
-								margin: 0;
+								margin: 0 0 2rem 0;
 
 								div {
 									background: none;
@@ -100,8 +122,8 @@
 									}
 								}
 
-								&:first-child {
-									margin: 0 0 2rem 0;
+								&:last-child {
+									margin: 0;
 								}
 							}
 						}
@@ -110,6 +132,10 @@
 					&#employment {
 						ul.panel {
 							li {
+								&:nth-child(2) {
+									// margin: 0 0 2rem 0;
+								}
+
 								div {
 									&:nth-child(2) {
 										margin: 0.4rem 0 0 0;
@@ -118,6 +144,7 @@
 									div {
 										h2 {
 											color: vars.$darkColor;
+											font-weight: normal;
 										}
 									}
 								}
