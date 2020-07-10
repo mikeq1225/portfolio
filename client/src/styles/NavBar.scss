@@ -51,6 +51,12 @@
 	}
 }
 
+@media (max-width: 850px) {
+	#navBar {
+		background: url("/assets/background3.jpg") no-repeat center center/cover;
+	}
+}
+
 @media (max-width: 500px) {
 	#navBar {
 		background: url("/assets/background3.jpg") no-repeat center center/cover;
