@@ -10,6 +10,8 @@ div#about {
 			grid-gap: 1.8rem;
 
 			.bioImage {
+				display: grid;
+				grid-template-columns: repeat(2, 1fr);
 				grid-area: image;
 			}
 

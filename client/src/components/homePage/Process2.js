@@ -1,9 +1,9 @@
 import React from "react"
 import "../../styles/homePage/Process2.scss"
 import { FaCode } from "react-icons/fa"
-import { GrNotes } from "react-icons/gr"
+import { GiTalk } from "react-icons/gi"
 import { MdPhotoSizeSelectSmall } from "react-icons/md"
-import { FcSmartphoneTablet } from "react-icons/fc"
+import { MdDevices } from "react-icons/md"
 import { AiOutlineFileDone } from "react-icons/ai"
 import ScrollAnimation from "react-animate-on-scroll"
 import "animate.css/animate.min.css"
@@ -29,10 +29,13 @@ export default (props) => {
 							>
 								<div>
 									<h3>
-										<GrNotes /> First
+										<GiTalk />
 									</h3>
 									<h2>Discuss the project</h2>
-									<p>Talk with customer to find out their needs and desires</p>
+									<p>
+										I talk with the customer to find out what their needs and
+										desires are for the project
+									</p>
 								</div>
 							</ScrollAnimation>
 						</li>
@@ -45,12 +48,13 @@ export default (props) => {
 							>
 								<div>
 									<h3>
-										<MdPhotoSizeSelectSmall /> Second
+										<MdPhotoSizeSelectSmall />
 									</h3>
 									<h2>Design the Wireframes</h2>
 									<p>
-										Create wireframes to the customer can see what the project
-										could look like in the end
+										Create wireframes based on previous conversations so the
+										customer can see what the project would look like when
+										finished
 									</p>
 								</div>
 							</ScrollAnimation>
@@ -64,12 +68,13 @@ export default (props) => {
 							>
 								<div>
 									<h3>
-										<FaCode /> Third
+										<FaCode />
 									</h3>
 									<h2>Write Code</h2>
 									<p>
 										Write the code for the project and stay in communication
-										with customer along the way
+										with the customer along the way to make sure their needs
+										haven't changed
 									</p>
 								</div>
 							</ScrollAnimation>
@@ -83,12 +88,12 @@ export default (props) => {
 							>
 								<div>
 									<h3>
-										<FcSmartphoneTablet /> Fourth
+										<MdDevices />
 									</h3>
 									<h2>Make responsive</h2>
 									<p>
-										Make sure the site or application is responsive on all
-										screens it will be used on
+										Make sure the website or application is responsive on all
+										devices that it is intended to be used on
 									</p>
 								</div>
 							</ScrollAnimation>
@@ -102,7 +107,7 @@ export default (props) => {
 							>
 								<div>
 									<h3>
-										<AiOutlineFileDone /> Lastly
+										<AiOutlineFileDone />
 									</h3>
 									<h2>Deliver Project</h2>
 									<p>

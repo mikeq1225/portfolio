@@ -13,11 +13,12 @@ export default (props) => {
 						Let me tell you a little about myself and what I do...
 					</p>
 					<div className="info">
-						<img
-							className="bioImage"
-							src="/assets/michaelQ.jpg"
-							alt="Michael Quarne"
-						/>
+						<div className="bioImage">
+							<img src="/assets/michael1.jpg" alt="Michael Quarne" />
+							<img src="/assets/michael2.jpg" alt="Michael Quarne" />
+							<img src="/assets/michael3.jpg" alt="Michael Quarne" />
+							<img src="/assets/michael4.jpg" alt="Michael Quarne" />
+						</div>
 						<div className="bio bgLight">
 							<h4>Your project is in safe hands</h4>
 							<p>

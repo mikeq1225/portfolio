@@ -4,12 +4,12 @@ import "../../styles/homePage/Header.scss"
 
 export default (props) => {
 	class TypeWriter {
-		constructor(txtElement, words, wait = 3000) {
+		constructor(txtElement, words, wait = 1000) {
 			this.txtElement = txtElement
 			this.words = words
 			this.txt = ""
 			this.wordIndex = 0
-			this.wait = parseInt(wait, 10)
+			this.wait = parseInt(wait, 8)
 			this.type()
 			this.isDeleting = false
 		}
@@ -33,10 +33,10 @@ export default (props) => {
 			this.txtElement.innerHTML = `<span class="txt">${this.txt}</span>`
 
 			// Initial Type Speed
-			let typeSpeed = 300
+			let typeSpeed = 200
 
 			if (this.isDeleting) {
-				typeSpeed /= 2
+				typeSpeed /= 3
 			}
 
 			// If word is complete
@@ -50,7 +50,7 @@ export default (props) => {
 				// Move to next word
 				this.wordIndex++
 				// Pause before start typing
-				typeSpeed = 500
+				typeSpeed = 1000
 			}
 
 			setTimeout(() => this.type(), typeSpeed)
@@ -83,7 +83,7 @@ export default (props) => {
 							<span
 								className="txt"
 								datawait="3000"
-								datawords='["UI/UX Enthusiast", "Application Developer"]'
+								datawords='["Application Developer", "UI/UX Enthusiast", "Web Designer"]'
 							></span>
 						</h1>
 						<p className="lead">
