@@ -15,7 +15,7 @@ export default (props) => {
 						<img src="/assets/logos/sassLogo.png" alt="Sass" />
 						<img src="/assets/logos/nodeJSLogo.png" alt="Node.js" />
 						<img src="/assets/logos/expressLogo.png" alt="Express" />
-						<img src="/assets/logos/AWSLogo.png" alt="Amazon We Services" />
+						<img src="/assets/logos/MySQLLogo.png" alt="Amazon We Services" />
 					</div>
 				</div>
 			</section>

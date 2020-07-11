@@ -14,7 +14,7 @@ export default (props) => {
 					</div>
 					<h4>JavaScript</h4>
 					<div className="progress">
-						<div style={{ width: "70%" }}></div>
+						<div style={{ width: "77%" }}></div>
 					</div>
 					<h4>React & Redux</h4>
 					<div className="progress">

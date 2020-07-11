@@ -25,7 +25,7 @@ export default (props) => {
 					arrow.classList.add("rotate")
 					panel.classList.add("show")
 					panel.classList.remove("hide")
-				}, index * 1800)
+				}, index * 1400)
 			})
 		})
 	}
@@ -65,7 +65,7 @@ export default (props) => {
 			<div className="container">
 				<section className="resBody">
 					<ul id="accordion">
-						<li>
+						<li id="summary">
 							<div className="title" onClick={(e) => display(e)}>
 								<FaChevronRight />
 								<h2>Summary</h2>
