@@ -1,12 +1,7 @@
 import React from "react"
-// import { NavLink, Link } from "react-router-dom"
 import "../../styles/homePage/Specialize.scss"
-import {
-	FaFileAlt,
-	FaDesktop,
-	FaObjectUngroup,
-	FaMobileAlt,
-} from "react-icons/fa"
+import { FaFileAlt, FaDesktop, FaObjectUngroup } from "react-icons/fa"
+import { RiUserFollowLine } from "react-icons/ri"
 import { IconContext } from "react-icons/lib"
 
 export default (props) => {
@@ -18,29 +13,35 @@ export default (props) => {
 					<div className="bottomLine"></div>
 					<p className="lead">
 						Allowing the customer's needs to dictate design while keeping
-						responsive design at the forefront
+						responsiveness at the forefront
 					</p>
 					<div className="specials">
 						<IconContext.Provider value={{ size: "4rem" }}>
 							<div>
 								<FaFileAlt />
 								<h3>Conceptualize</h3>
-								<p>Describe how I do the thing above.</p>
+								<p>Developing creative solutions to everyday problems</p>
 							</div>
 							<div>
 								<FaDesktop />
 								<h3>Design</h3>
-								<p>Describe how I do the thing above.</p>
+								<p>Making the project look as good as it functions</p>
 							</div>
 							<div>
 								<FaObjectUngroup />
-								<h3>Develop</h3>
-								<p>Describe how I do the thing above.</p>
+								<h3>Development</h3>
+								<p>
+									Continuing to learn modern technologies while maintaining core
+									fundamentals
+								</p>
 							</div>
 							<div>
-								<FaMobileAlt />
-								<h3>Responsive</h3>
-								<p>Describe how I do the thing above.</p>
+								<RiUserFollowLine />
+								<h3>UI/UX</h3>
+								<p>
+									Making sure the user experience is as good as the code that
+									drives it
+								</p>
 							</div>
 						</IconContext.Provider>
 					</div>

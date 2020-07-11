@@ -50,7 +50,7 @@
 					}
 
 					&#skills {
-						ul {
+						ul.panel {
 							li {
 								font-weight: bold;
 								text-transform: uppercase;
@@ -159,6 +159,90 @@
 				text-align: center;
 				color: vars.$mainColor;
 				font-size: 1.5rem;
+			}
+		}
+	}
+}
+
+@media (max-width: 1050px) {
+	#resumeBody {
+		.container {
+			.resBody {
+				ul#accordion {
+					li {
+						&#skills {
+							ul.panel {
+								li {
+									flex-direction: column;
+
+									ul {
+										display: grid;
+										grid-template-columns: repeat(5, 1fr);
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 500px) {
+	#resumeBody {
+		.container {
+			.resBody {
+				ul#accordion {
+					li {
+						&#skills {
+							ul.panel {
+								li {
+									flex-direction: column;
+
+									ul {
+										grid-template-columns: repeat(2, 1fr);
+									}
+								}
+							}
+						}
+
+						&#education {
+							ul.panel {
+								li {
+									div {
+										div {
+											flex-direction: column;
+											align-items: center;
+
+											a {
+												font-size: 3rem;
+											}
+										}
+									}
+								}
+							}
+						}
+
+						&#employment {
+							ul.panel {
+								li {
+									div {
+										div {
+											flex-direction: column;
+											align-items: center;
+											margin: 1rem 0;
+
+											h4 {
+												margin: 0 0 0.7rem 0;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
 			}
 		}
 	}

@@ -1,11 +1,8 @@
 import React from "react"
 import "../../styles/homePage/Stats.scss"
-import {
-	FaUsers,
-	FaAward,
-	FaHourglassStart,
-	FaCodeBranch,
-} from "react-icons/fa"
+import { FaUsers } from "react-icons/fa"
+import { GiWorld } from "react-icons/gi"
+import { DiGitBranch, DiGitPullRequest } from "react-icons/di"
 import { IconContext } from "react-icons/lib"
 
 export default (props) => {
@@ -19,34 +16,34 @@ export default (props) => {
 								<FaUsers />
 							</li>
 							<li className="title">Clients</li>
-							<li className="number">100</li>
-						</ul>
-					</div>
-					<div>
-						<ul>
-							<li>
-								<FaAward />
-							</li>
-							<li className="title">Awards</li>
 							<li className="number">4</li>
 						</ul>
 					</div>
 					<div>
 						<ul>
 							<li>
-								<FaHourglassStart />
+								<GiWorld />
 							</li>
-							<li className="title">Hours Worked</li>
-							<li className="number">2300</li>
+							<li className="title">Deployed Projects</li>
+							<li className="number">11</li>
 						</ul>
 					</div>
 					<div>
 						<ul>
 							<li>
-								<FaCodeBranch />
+								<DiGitPullRequest />
 							</li>
-							<li className="title">Projects Completed</li>
-							<li className="number">15</li>
+							<li className="title">GitHub Contributions</li>
+							<li className="number">958</li>
+						</ul>
+					</div>
+					<div>
+						<ul>
+							<li>
+								<DiGitBranch />
+							</li>
+							<li className="title">Small Projects</li>
+							<li className="number">22</li>
 						</ul>
 					</div>
 				</IconContext.Provider>
