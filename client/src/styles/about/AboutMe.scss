@@ -2,6 +2,10 @@
 
 div#about {
 	div.container {
+		div.bottomLine {
+			margin: 0 auto 3rem auto;
+		}
+
 		div.info {
 			display: grid;
 			grid-template-areas:
@@ -25,7 +29,9 @@ div#about {
 				}
 
 				p {
-					font-size: 1.6rem;
+					font-size: 1.8rem;
+					text-align: left;
+					margin: 1.5rem 0;
 				}
 			}
 
@@ -62,16 +68,47 @@ div#about {
 	}
 }
 
+@media (max-width: 1050px) {
+	div#about {
+		div.container {
+			div.info {
+				display: grid;
+				grid-template-areas:
+					"bio"
+					"image"
+					"award1"
+					"award2"
+					"award3";
+
+				.bioImage {
+					grid-template-columns: repeat(4, 1fr);
+					grid-area: image;
+				}
+
+				.bio {
+					border-left: none;
+					border-bottom: 2px solid vars.$mainColor;
+				}
+			}
+		}
+	}
+}
+
 @media (max-width: 500px) {
 	div#about {
 		div.container {
 			div.info {
 				grid-template-areas:
-					"image"
 					"bio"
+					"image"
 					"award1"
 					"award2"
 					"award3";
+
+				.bioImage {
+					display: grid;
+					grid-template-columns: repeat(2, 1fr);
+				}
 
 				.bio {
 					border-left: none;

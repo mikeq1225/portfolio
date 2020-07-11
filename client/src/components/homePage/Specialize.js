@@ -1,5 +1,4 @@
 import React from "react"
-// import { NavLink, Link } from "react-router-dom"
 import "../../styles/homePage/Specialize.scss"
 import { FaFileAlt, FaDesktop, FaObjectUngroup } from "react-icons/fa"
 import { RiUserFollowLine } from "react-icons/ri"
@@ -14,7 +13,7 @@ export default (props) => {
 					<div className="bottomLine"></div>
 					<p className="lead">
 						Allowing the customer's needs to dictate design while keeping
-						responsive design at the forefront
+						responsiveness at the forefront
 					</p>
 					<div className="specials">
 						<IconContext.Provider value={{ size: "4rem" }}>
