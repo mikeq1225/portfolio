@@ -25,7 +25,7 @@ export default (props) => {
 						<ul>
 							<li>
 								<FaEnvelope />
-								<a href="mikedq1225@gmail.com">mikedq1225@gmail.com</a>
+								<a href="mailto:mikedq1225@gmail.com">mikedq1225@gmail.com</a>
 							</li>
 							<li>
 								<FaFacebookF />

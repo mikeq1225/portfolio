@@ -25,7 +25,7 @@ export default (props) => {
 					arrow.classList.add("rotate")
 					panel.classList.add("show")
 					panel.classList.remove("hide")
-				}, index * 1800)
+				}, index * 1400)
 			})
 		})
 	}
@@ -63,9 +63,16 @@ export default (props) => {
 	return (
 		<div id="resumeBody">
 			<div className="container">
+				<a
+					href="https://resume.creddle.io/resume/1lftdzw84g6"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					Printable resume
+				</a>
 				<section className="resBody">
 					<ul id="accordion">
-						<li>
+						<li id="summary">
 							<div className="title" onClick={(e) => display(e)}>
 								<FaChevronRight />
 								<h2>Summary</h2>
@@ -298,13 +305,6 @@ export default (props) => {
 							</ul>
 						</li>
 					</ul>
-					<a
-						href="https://resume.creddle.io/resume/1lftdzw84g6"
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						Printable resume
-					</a>
 				</section>
 			</div>
 		</div>

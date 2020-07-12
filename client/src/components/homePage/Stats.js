@@ -34,7 +34,7 @@ export default (props) => {
 								<DiGitPullRequest />
 							</li>
 							<li className="title">GitHub Contributions</li>
-							<li className="number">958</li>
+							<li className="number">958+</li>
 						</ul>
 					</div>
 					<div>
