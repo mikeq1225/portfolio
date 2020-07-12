@@ -63,6 +63,13 @@ export default (props) => {
 	return (
 		<div id="resumeBody">
 			<div className="container">
+				<a
+					href="https://resume.creddle.io/resume/1lftdzw84g6"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					Printable resume
+				</a>
 				<section className="resBody">
 					<ul id="accordion">
 						<li id="summary">
@@ -298,13 +305,6 @@ export default (props) => {
 							</ul>
 						</li>
 					</ul>
-					<a
-						href="https://resume.creddle.io/resume/1lftdzw84g6"
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						Printable resume
-					</a>
 				</section>
 			</div>
 		</div>

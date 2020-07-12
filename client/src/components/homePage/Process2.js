@@ -15,8 +15,8 @@ export default (props) => {
 				<h2 className="sectionTitle">My Creative Process</h2>
 				<div className="bottomLine"></div>
 				<p className="lead">
-					I start with figuring out what the customer wants their applications
-					to do and how they want it to look
+					I start with figuring out what the customer wants their application to
+					do and how they want it to look
 				</p>
 				<div id="timeline">
 					<ul>
@@ -93,7 +93,7 @@ export default (props) => {
 									<h2>Make responsive</h2>
 									<p>
 										Make sure the website or application is responsive on all
-										devices that it is intended to be used on
+										the devices that it is intended to be used on
 									</p>
 								</div>
 							</ScrollAnimation>
