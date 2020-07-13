@@ -124,7 +124,7 @@ export default (props) => {
 								<li>
 									Remote work:
 									<ul>
-										<li>Agile & Scrum Project Management,</li>
+										<li>Agile &amp; Scrum Project Management,</li>
 										<li>GitHub Version Control,</li>
 										<li>Zoom video conferencing,</li>
 										<li>Slack messaging</li>

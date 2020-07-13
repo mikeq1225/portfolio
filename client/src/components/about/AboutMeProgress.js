@@ -8,7 +8,7 @@ export default (props) => {
 				<div className="container">
 					<h2 className="sectionTitle">Technical Skills</h2>
 					<div className="bottomLine"></div>
-					<h4>HTML & CSS / Sass</h4>
+					<h4>HTML &amp; CSS / Sass</h4>
 					<div className="progress">
 						<div style={{ width: "95%" }}></div>
 					</div>
@@ -16,7 +16,7 @@ export default (props) => {
 					<div className="progress">
 						<div style={{ width: "77%" }}></div>
 					</div>
-					<h4>React & Redux</h4>
+					<h4>React &amp; Redux</h4>
 					<div className="progress">
 						<div style={{ width: "75%" }}></div>
 					</div>
