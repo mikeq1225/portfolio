@@ -9,7 +9,7 @@ export default (props) => {
 				<div className="content container">
 					<div>
 						<p>Copyright © 2020. All rights reserved</p>
-						<p>Designed by Michael Quarne</p>
+						<p>Designed &amp; created by Michael Quarne</p>
 					</div>
 					<div className="social">
 						<a
