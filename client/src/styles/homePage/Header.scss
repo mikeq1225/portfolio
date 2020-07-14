@@ -29,9 +29,10 @@
 	}
 }
 
-@media (max-width: 800px) {
+@media (max-width: 850px) {
 	#showcase {
-		height: 40vh;
+		height: 30vh;
+		background: vars.$greyColor;
 
 		header {
 			.container {
@@ -49,12 +50,21 @@
 
 @media (max-width: 500px) {
 	#showcase {
-		display: none;
+		// display: none;
+		height: 40vh;
+		background: vars.$greyColor;
 
 		header {
 			.container {
 				div.headerContent {
-					display: none;
+					// display: none;
+					h1 {
+						font-size: 3rem;
+					}
+
+					p {
+						font-size: 1.4rem;
+					}
 				}
 			}
 		}
