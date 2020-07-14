@@ -8,8 +8,7 @@
 		"server": "cd server && npm start",
 		"build": "cd client && yarn run build && cd ../server/public && rm -rf * && cp -r ../../client/build/* .",
 		"local": "concurrently \"npm run client\" \"npm run server\"",
-		"start": "npm run server",
-		"heroku-postbuild": "cd client && yarn && yarn run build && cd server/public && rm -rf * && cp -r ../../client/build/* ."
+		"start": "npm run server"
 	},
 	"author": "Michael Quarne",
 	"license": "ISC",
