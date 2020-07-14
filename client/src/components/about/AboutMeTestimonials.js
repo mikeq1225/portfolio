@@ -60,9 +60,9 @@ export default (props) => {
 						</div>
 						<div>
 							<p>
-								"Mike is the best person to work with. He took the time to
-								listen to what I wanted and came up with a plan of how to
-								execute that plan. Couldn't be happier."
+								"Mike was the best to work with. Very easy going but diligent.
+								He took the time to listen to what I wanted and came up with a
+								plan of how to execute that idea. Couldn't be happier."
 							</p>
 							<ul>
 								<li>
@@ -81,9 +81,10 @@ export default (props) => {
 						</div>
 						<div>
 							<p>
-								"Mike is the best person to work with. He took the time to
-								listen to what I wanted and came up with a plan of how to
-								execute that plan. Couldn't be happier."
+								"Mike was very easy to work with. He took the time to listen and
+								fully understand my needs. Although we weren't sure about the
+								direction of our project, he did what he could along the way and
+								was able to adapt as we our idea changed."
 							</p>
 							<ul>
 								<li>
@@ -95,7 +96,7 @@ export default (props) => {
 								<li>
 									<div>
 										<p>Samantha Case</p>
-										<p>From: San Francisco, California</p>
+										<p>From: Las Vegas, Nevada</p>
 									</div>
 								</li>
 							</ul>

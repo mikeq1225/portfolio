@@ -14,12 +14,15 @@ import WorkProjects from "./work/WorkProjects"
 import ResumeHeader from "./resume/ResumeHeader"
 import ResumeBody from "./resume/ResumeBody"
 import Footer from "./Footer"
+import ScrollToTop from "./ScrollToTop"
 
 export default (props) => {
 	return (
 		<Router>
 			<div>
 				<Suspense fallback={<div>Loading...</div>}>
+					{/* ScrollToTop is imported to call the function in the component to scroll to top of page on route change */}
+					<ScrollToTop />
 					<Route exact path="/" render={() => <Redirect to="/Home" />} />
 					<Route path="/" component={NavBar}></Route>
 					<Route path="/Home" component={Header}></Route>
