@@ -2,16 +2,23 @@
 
 div#aboutProgress {
 	section {
+		background: vars.$color2;
+
 		div.container {
+			h2 {
+				color: vars.$color3;
+			}
+
 			h4 {
 				font-size: 1.5rem;
 				text-transform: uppercase;
+				color: vars.$color3;
 			}
 
 			div.progress {
 				overflow: hidden;
 				height: 20px;
-				background: vars.$medColor;
+				background: vars.$color3;
 				border-radius: 5px;
 				margin: 0 0 1rem 0;
 
@@ -19,7 +26,7 @@ div#aboutProgress {
 					height: 100%;
 					color: #fff;
 					text-align: center;
-					background: vars.$mainColor;
+					background: vars.$color4;
 				}
 			}
 		}

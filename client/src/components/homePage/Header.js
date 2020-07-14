@@ -79,15 +79,15 @@ export default (props) => {
 				<div className="container">
 					<div className="headerContent">
 						<h1>
-							I am Michael, The{" "}
+							I am Michael, A{" "}
 							<span
 								className="txt"
 								datawait="3000"
-								datawords='["Application Developer", "UI/UX Enthusiast", "Web Designer"]'
+								datawords='["Software Developer", "Full-Stack Engineer", "Web Designer"]'
 							></span>
 						</h1>
 						<p className="lead">
-							I build web applications with a focus on UI/UX Design
+							I build web applications with a focus on the end user
 						</p>
 						<Link to="/Work" className="buttonMain">
 							View My Work

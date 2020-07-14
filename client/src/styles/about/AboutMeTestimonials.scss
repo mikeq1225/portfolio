@@ -3,21 +3,29 @@
 #aboutTest {
 	section {
 		div.container {
+			div.bottomLine {
+				margin: 0 auto 3rem auto;
+			}
+
 			div.testimonials {
 				display: grid;
 				grid-template-columns: repeat(4, 1fr);
 				grid-gap: 1rem;
 
 				div {
+					display: flex;
+					flex-direction: column;
+					justify-content: space-between;
+					border: 1px solid vars.$color2;
+					border-radius: 5px;
+
 					p {
-						border: 1px solid vars.$medColor;
-						border-radius: 5px;
 						padding: 0.9rem;
 						font-size: 1.5rem;
 					}
 
 					ul {
-						margin: 1rem 0 0 0;
+						margin: 0 1rem;
 						display: flex;
 						align-items: center;
 
@@ -32,11 +40,20 @@
 							div {
 								display: flex;
 								flex-direction: column;
+								border: none;
 
 								p {
 									border: none;
 									padding: 0;
 									font-size: 1.2rem;
+
+									&:last-child {
+										color: vars.$color5;
+
+										span {
+											color: vars.$color1;
+										}
+									}
 								}
 							}
 						}

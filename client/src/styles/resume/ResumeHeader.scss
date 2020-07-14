@@ -3,7 +3,7 @@
 #resumeHeader {
 	.container {
 		.resHeader {
-			background: vars.$greyColor;
+			background: vars.$color3;
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
@@ -11,18 +11,19 @@
 
 			div:first-child {
 				h1 {
-					color: vars.$mainColor;
+					color: vars.$color1;
 					font-size: 3rem;
 					text-transform: uppercase;
 
 					span {
-						color: vars.$resGreyColor;
+						color: vars.$color5;
 					}
 				}
 
 				h3 {
 					text-transform: uppercase;
 					font-size: 2rem;
+					color: vars.$darkColor;
 				}
 			}
 
@@ -35,6 +36,7 @@
 						font-size: 1.4rem;
 						display: flex;
 						align-items: center;
+						color: vars.$darkColor;
 
 						&:nth-child(odd) {
 							margin: 0 3rem 0 0;
@@ -47,6 +49,11 @@
 						svg {
 							font-size: 1.5rem;
 							margin: 0 1rem 0 0;
+							color: vars.$color2;
+						}
+
+						a {
+							color: vars.$darkColor;
 						}
 					}
 				}

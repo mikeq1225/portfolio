@@ -1,5 +1,5 @@
 import React from "react"
-import { NavLink } from "react-router-dom"
+import { NavLink, Link } from "react-router-dom"
 import "../styles/NavBar.scss"
 
 export default (props) => {
@@ -7,11 +7,13 @@ export default (props) => {
 		<div id="navBar">
 			<div className="container">
 				<nav>
-					<img
-						id="logo"
-						src="/assets/MichaelQuarneLogo.png"
-						alt="Michael Quarne logo"
-					/>
+					<Link to="/Home">
+						<img
+							id="logo"
+							src="/assets/MichaelQuarneLogo.png"
+							alt="Michael Quarne logo"
+						/>
+					</Link>
 					<ul>
 						<li>
 							<NavLink to="/Home" activeClassName="selected">
