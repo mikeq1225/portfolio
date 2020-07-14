@@ -25,7 +25,7 @@ export default (props) => {
 						</li>
 						<li>
 							<NavLink to="/Work" activeClassName="selected">
-								Work
+								My Work
 							</NavLink>
 						</li>
 						<li>
