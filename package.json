@@ -15,7 +15,7 @@
 	"bugs": {
 		"url": "https://github.com/PC-Fullstack-Spring-2020/boilerpolate/issues"
 	},
-	"homepage": "https://github.com/PC-Fullstack-Spring-2020/boilerpolate#readme",
+	"homepage": "/",
 	"dependencies": {
 		"@testing-library/jest-dom": "^5.11.0",
 		"@testing-library/react": "^10.4.6",
