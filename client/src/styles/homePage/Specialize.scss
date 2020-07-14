@@ -15,7 +15,7 @@
 
 				div {
 					svg {
-						color: vars.$mainColor;
+						color: vars.$color4;
 						margin: 0 0 1rem 0;
 					}
 
@@ -40,7 +40,7 @@
 					grid-template-columns: 1fr;
 
 					div {
-						border-bottom: 1px solid vars.$medColor;
+						border-bottom: 1px solid vars.$color1;
 						padding: 0 0 1rem 0;
 
 						&:last-child {

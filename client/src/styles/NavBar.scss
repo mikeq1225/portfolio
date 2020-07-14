@@ -5,32 +5,36 @@
 	top: 0;
 	left: 0;
 	width: 100%;
-	background: vars.$lightColor;
+	background: vars.$color3;
 	z-index: 2;
-	border-bottom: 2px solid vars.$mainColor;
+	border-bottom: 2px solid vars.$color1;
 
 	.container {
-		padding: 1rem 0;
+		padding: 0;
 
 		nav {
 			display: flex;
 			justify-content: space-between;
-			padding: 1.5rem 0 0 0;
+			align-items: center;
+			padding: 1.5rem 0;
 
-			img#logo {
-				width: 120px;
+			a {
 				height: 40px;
-				margin: 0 0 0 1rem;
+
+				img#logo {
+					width: 120px;
+					margin: 0 0 0 1rem;
+				}
 			}
 
 			ul {
 				display: flex;
 
 				li {
-					padding: 1.5rem 2rem;
+					padding: 0 2rem;
 
 					a {
-						color: vars.$darkColor;
+						color: vars.$color1;
 						text-transform: uppercase;
 						border-bottom: 3px solid transparent;
 						padding: 0 0 1rem 0;
@@ -38,11 +42,12 @@
 						font-size: 1.5rem;
 
 						&:hover {
+							color: vars.$color2;
 							border-color: vars.$medColor;
 						}
 
 						&.selected {
-							border-color: vars.$mainColor;
+							border-color: vars.$color5;
 						}
 					}
 				}

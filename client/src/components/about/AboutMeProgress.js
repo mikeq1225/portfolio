@@ -4,7 +4,7 @@ import "../../styles/about/AboutMeProgress.scss"
 export default (props) => {
 	return (
 		<div id="aboutProgress">
-			<section className="bgDark py3">
+			<section className=" py3">
 				<div className="container">
 					<h2 className="sectionTitle">Technical Skills</h2>
 					<div className="bottomLine"></div>

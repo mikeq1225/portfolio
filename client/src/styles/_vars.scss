@@ -1,14 +1,42 @@
 // Variables
 $width: 1240px;
-$mainColor: #1a16c5;
-$secondColor: #5b7bb4;
 $lightColor: #f4f4f4;
 $medColor: #ccc;
-$greyColor: #e4e7e9;
-$resGreyColor: #9ba4a9;
 $darkColor: #333;
+$greyColor: #e4e7e9;
+
+//Original Colors
+// $color1: #1a16c5;
+// $color2: #5b7bb4;
+
+//Resume colors
+$resGreyColor: #9ba4a9;
+$mainColor: #1a16c5;
+
+//Jurnease Colors
 $featuredColor: #018aa3;
 $highlightColor: #ff8930;
+
+//Scheme 1
+// $color1: #00a8c6;
+// $color2: #40c0cb;
+// $color3: #f9f2e7;
+// $color4: #aee239;
+// $color5: #8fbe00;
+
+//Scheme 2
+// $color1: #00a8c6;
+// $color2: #19ddff;
+// $color3: #00687a;
+// $color4: #7a3700;
+// $color5: #c75a00;
+
+//Scheme 3
+$color1: #8fbe00;
+$color2: #230abf;
+$color3: #1a0b73;
+$color4: #730b47;
+$color5: #bf0a72;
 
 // Set Text colors
 @function setTextColor($color) {

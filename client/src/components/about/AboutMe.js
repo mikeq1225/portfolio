@@ -7,9 +7,7 @@ export default (props) => {
 		<div id="about">
 			<section className="textCenter py3">
 				<div className="container">
-					<p className="lead">
-						Let me tell you a little about myself and what I like to do...
-					</p>
+					<p className="lead">What makes me who I am?</p>
 					<div className="bottomLine"></div>
 					<div className="info">
 						<div className="bioImage">
@@ -19,7 +17,7 @@ export default (props) => {
 							<img src="/assets/michael6.jpg" alt="Michael Quarne" />
 						</div>
 						<div className="bio bgLight">
-							<h4>What makes me who I am...</h4>
+							{/* <h4>What makes me who I am</h4> */}
 							<p>
 								I am a full-stack web developer from Las Vegas and a graduate
 								from PunchCode’s Full-Stack Software Engineer boot camp. Skilled
@@ -43,7 +41,7 @@ export default (props) => {
 								informed us that they would not be moving back to Wisconsin. We
 								decided it was a good time to move somewhere warm to begin an
 								exciting new chapter in our lives. Vegas has not let us down.
-								There is always something new to explore and we have meet many
+								There is always something new to explore and we have met many
 								amazing new friends.
 							</p>
 						</div>

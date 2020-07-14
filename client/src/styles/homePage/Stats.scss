@@ -20,6 +20,10 @@ div#statSection {
 				li {
 					line-height: 2;
 
+					svg {
+						color: vars.$color1;
+					}
+
 					&.title {
 						font-size: 1.6rem;
 					}
@@ -27,6 +31,7 @@ div#statSection {
 					&.number {
 						font-size: 1.9rem;
 						font-weight: bold;
+						color: vars.$color5;
 					}
 				}
 			}

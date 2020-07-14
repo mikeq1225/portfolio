@@ -39,7 +39,7 @@ export default (props) => {
 								<RiUserFollowLine />
 								<h3>UI/UX</h3>
 								<p>
-									Making sure the user experience is as good as the code that
+									Trying to make the user experience as good as the code that
 									drives it
 								</p>
 							</div>

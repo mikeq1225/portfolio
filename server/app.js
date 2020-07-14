@@ -18,7 +18,7 @@ const workItems = [
 		description:
 			"Jurn(ease) is a travel planning application that allows multiple users to plan group vacations in the same place.  They can create Jurn(e)s, or trips, and invite others to join.  Then everyone on the Jurn(e) can decide where to go, what do to, and where to stay.",
 		problem:
-			"My co-creator and I wanted to learn the lifecycle process of building an application.  We come up with the concept, wrote the code, tested the code and application, and finally deployed it on the internet.",
+			"My co-creator and I wanted to learn the lifecycle process of building an application.  We came up with the concept, wrote the code, tested the code and application, and finally deployed it on the internet.",
 		lessons:
 			"I learned how to plan and execute a large project, how to take all the languages and tools that I've learned and apply them to one project, how to use AWS as a remote MySQL database for our project, and I learned how to accomplish all of this while working in a remote environment.",
 		tech:

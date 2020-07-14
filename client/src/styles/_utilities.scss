@@ -19,8 +19,8 @@
 .button {
 	&Main {
 		@extend %buttonShared;
-		color: vars.setTextColor(vars.$mainColor);
-		background-color: vars.$mainColor;
+		color: vars.setTextColor(vars.$color1);
+		background-color: vars.$color1;
 	}
 
 	&Light {
@@ -49,8 +49,8 @@ a.buttonMain:hover,
 a.buttonLight:hover,
 a.buttonDark:hover,
 input[class^="button"]:hover {
-	background-color: vars.$medColor;
-	color: vars.setTextColor(vars.$medColor);
+	background-color: vars.$color2;
+	color: vars.setTextColor(vars.$color2);
 }
 
 .buttonFeatured:hover {
@@ -61,7 +61,7 @@ input[class^="button"]:hover {
 // Backgrounds
 .bg {
 	&Main {
-		background: vars.$mainColor;
+		background: vars.$color1;
 		color: vars.$lightColor;
 	}
 	&Dark {
@@ -88,7 +88,7 @@ input[class^="button"]:hover {
 }
 
 .bottomLine {
-	background: vars.$mainColor;
+	background: vars.$color1;
 	height: 3px;
 	width: 4rem;
 	display: block;
