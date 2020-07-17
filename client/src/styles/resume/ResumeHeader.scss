@@ -126,3 +126,17 @@
 		}
 	}
 }
+
+@media (max-width: 321px) {
+	#resumeHeader {
+		.container {
+			.resHeader {
+				div:first-child {
+					h1 {
+						font-size: 3rem;
+					}
+				}
+			}
+		}
+	}
+}
