@@ -115,6 +115,10 @@ div#process {
 @media (max-width: 850px) {
 	div#process {
 		section {
+			p {
+				margin: 0 2rem 2.5rem 2rem;
+			}
+
 			div#timeline {
 				ul {
 					li {
@@ -141,7 +145,7 @@ div#process {
 		section {
 			p.lead {
 				margin: 0;
-				padding: 1rem;
+				padding: 1rem 1rem 2rem;
 			}
 
 			div#timeline {
