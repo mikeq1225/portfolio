@@ -2,7 +2,7 @@
 
 #showcase {
 	height: 75vh;
-	background: url("/assets/background3.jpg") no-repeat center center/cover;
+	background: url("/assets/background8.jpg") no-repeat center center / cover;
 
 	header {
 		.container {
@@ -13,18 +13,19 @@
 				h1 {
 					font-size: 5rem;
 					line-height: 1.2;
-					color: vars.$darkColor;
+					color: vars.$dark;
 
 					span {
-						color: vars.$color5;
+						color: vars.$color4;
 					}
 				}
 
 				p {
-					color: vars.$darkColor;
+					color: vars.$dark;
 				}
 
 				a {
+					@include vars.buttonThemed(vars.$color1);
 					font-size: 1.7rem;
 				}
 			}
@@ -35,7 +36,7 @@
 @media (max-width: 850px) {
 	#showcase {
 		height: 30vh;
-		background: vars.$greyColor;
+		background: vars.$color5;
 
 		header {
 			.container {
@@ -55,14 +56,14 @@
 	#showcase {
 		// display: none;
 		height: 40vh;
-		background: vars.$greyColor;
+		background: vars.$color6;
 
 		header {
 			.container {
 				div.headerContent {
 					// display: none;
 					h1 {
-						font-size: 3rem;
+						font-size: 2.7rem;
 					}
 
 					p {

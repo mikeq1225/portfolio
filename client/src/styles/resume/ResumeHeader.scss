@@ -3,7 +3,7 @@
 #resumeHeader {
 	.container {
 		.resHeader {
-			background: vars.$color3;
+			background: vars.$color6;
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
@@ -12,18 +12,18 @@
 			div:first-child {
 				h1 {
 					color: vars.$color1;
-					font-size: 3rem;
+					font-size: 3.6rem;
 					text-transform: uppercase;
 
 					span {
-						color: vars.$color5;
+						color: vars.$color2;
 					}
 				}
 
 				h3 {
 					text-transform: uppercase;
 					font-size: 2rem;
-					color: vars.$darkColor;
+					color: vars.$dark;
 				}
 			}
 
@@ -36,7 +36,7 @@
 						font-size: 1.4rem;
 						display: flex;
 						align-items: center;
-						color: vars.$darkColor;
+						color: vars.$dark;
 
 						&:nth-child(odd) {
 							margin: 0 3rem 0 0;
@@ -53,7 +53,7 @@
 						}
 
 						a {
-							color: vars.$darkColor;
+							color: vars.$dark;
 						}
 					}
 				}
@@ -76,6 +76,8 @@
 				}
 
 				div:nth-child(2) {
+					width: 90%;
+
 					ul {
 						display: grid;
 						grid-template-columns: repeat(3, 1fr);
@@ -107,10 +109,12 @@
 				}
 
 				div:nth-child(2) {
+					width: fit-content;
+
 					ul {
 						display: flex;
 						flex-direction: column;
-						align-items: center;
+						align-items: flex-start;
 
 						li:nth-child(odd),
 						li:nth-child(even) {

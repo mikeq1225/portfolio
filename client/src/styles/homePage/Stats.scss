@@ -9,11 +9,11 @@ div#statSection {
 			padding: 3rem 0;
 
 			&:nth-child(odd) {
-				background: vars.$lightColor;
+				background: vars.$color5;
 			}
 
 			&:nth-child(even) {
-				background: vars.$medColor;
+				background: vars.$color6;
 			}
 
 			ul {
@@ -31,7 +31,7 @@ div#statSection {
 					&.number {
 						font-size: 1.9rem;
 						font-weight: bold;
-						color: vars.$color5;
+						color: vars.$color2;
 					}
 				}
 			}

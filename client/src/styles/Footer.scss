@@ -1,8 +1,8 @@
 @use 'vars';
 
 div#footer {
-	background: vars.$darkColor;
-	color: vars.$lightColor;
+	background: vars.$dark;
+	color: vars.$light;
 
 	div.content {
 		display: flex;

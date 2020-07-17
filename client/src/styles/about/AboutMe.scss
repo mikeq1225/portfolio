@@ -24,16 +24,17 @@ div#about {
 			}
 
 			.bio {
+				@include vars.background(vars.$color6);
 				grid-area: bio;
-				border-left: 2px solid vars.$color1;
-				padding: 1rem;
+				border-left: 3px solid vars.$color1;
+				padding: 1rem 2rem;
 
 				h4 {
 					font-size: 2.3rem;
 				}
 
 				p {
-					font-size: 1.8rem;
+					font-size: 1.9rem;
 					text-align: left;
 					margin: 1.5rem 0;
 				}
@@ -75,6 +76,14 @@ div#about {
 @media (max-width: 1050px) {
 	div#about {
 		div.container {
+			div.bottomLine {
+				margin: 0 auto 2rem auto;
+			}
+
+			p {
+				margin: 0 0 1.5rem 0;
+			}
+
 			div.info {
 				display: grid;
 				grid-template-areas:
@@ -101,6 +110,12 @@ div#about {
 @media (max-width: 500px) {
 	div#about {
 		div.container {
+			padding: 1rem;
+
+			p {
+				font-size: 2rem;
+			}
+
 			div.info {
 				grid-template-areas:
 					"bio"
@@ -117,6 +132,15 @@ div#about {
 				.bio {
 					border-left: none;
 					border-bottom: 2px solid vars.$color1;
+					padding: 1rem;
+				}
+
+				.award1 {
+					border-bottom: 1px solid vars.$color1;
+				}
+
+				.award2 {
+					border-bottom: 1px solid vars.$color1;
 				}
 			}
 		}
