@@ -85,13 +85,13 @@ div#about {
 			}
 
 			div.info {
-				display: grid;
 				grid-template-areas:
-					"bio"
-					"image"
-					"award1"
-					"award2"
-					"award3";
+					"bio bio bio"
+					"image image image"
+					"award1 award2 award3";
+				// "award2"
+				// "award3";
+				grid-gap: 0;
 
 				.bioImage {
 					grid-template-columns: repeat(4, 1fr);
