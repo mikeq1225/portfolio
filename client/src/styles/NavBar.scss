@@ -5,7 +5,7 @@
 	top: 0;
 	left: 0;
 	width: 100%;
-	background: vars.$color3;
+	background: vars.$color6;
 	z-index: 2;
 	border-bottom: 2px solid vars.$color1;
 
@@ -39,15 +39,15 @@
 						border-bottom: 3px solid transparent;
 						padding: 0 0 1rem 0;
 						transition: border-color 0.5s;
-						font-size: 1.5rem;
+						font-size: 1.8rem;
 
 						&:hover {
-							color: vars.$color2;
-							border-color: vars.$medColor;
+							color: vars.$color3;
+							border-color: vars.$color4;
 						}
 
 						&.selected {
-							border-color: vars.$color5;
+							border-color: vars.$color2;
 						}
 					}
 				}
@@ -58,13 +58,28 @@
 
 @media (max-width: 850px) {
 	#navBar {
-		background: url("/assets/background3.jpg") no-repeat center center/cover;
+		background: url("/assets/background8.jpg") no-repeat 100% 65% / cover;
+
+		.container {
+			nav {
+				img#logo {
+				}
+
+				ul {
+					li {
+						a {
+							font-size: 1.4rem;
+						}
+					}
+				}
+			}
+		}
 	}
 }
 
 @media (max-width: 500px) {
 	#navBar {
-		background: url("/assets/background3.jpg") no-repeat center center/cover;
+		// background: url("/assets/background8.jpg") no-repeat center center/cover;
 
 		.container {
 			nav {
@@ -78,6 +93,10 @@
 				ul {
 					li {
 						padding: 1rem;
+
+						a {
+							font-size: 1.4rem;
+						}
 					}
 				}
 			}

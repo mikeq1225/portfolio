@@ -16,7 +16,7 @@ export default (props) => {
 							<img src="/assets/michael3.jpg" alt="Michael Quarne" />
 							<img src="/assets/michael6.jpg" alt="Michael Quarne" />
 						</div>
-						<div className="bio bgLight">
+						<div className="bio">
 							{/* <h4>What makes me who I am</h4> */}
 							<p>
 								I am a full-stack web developer from Las Vegas and a graduate

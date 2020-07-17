@@ -16,7 +16,7 @@
 					display: flex;
 					flex-direction: column;
 					justify-content: space-between;
-					border: 1px solid vars.$color2;
+					border: 1px solid vars.$color3;
 					border-radius: 5px;
 
 					p {
@@ -45,10 +45,11 @@
 								p {
 									border: none;
 									padding: 0;
-									font-size: 1.2rem;
+									font-size: 1.6rem;
 
 									&:last-child {
-										color: vars.$color5;
+										color: vars.$color2;
+										font-size: 1.2rem;
 
 										span {
 											color: vars.$color1;

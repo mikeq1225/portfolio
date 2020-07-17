@@ -17,23 +17,23 @@
 
 // Buttons
 .button {
-	&Main {
-		@extend %buttonShared;
-		color: vars.setTextColor(vars.$color1);
-		background-color: vars.$color1;
-	}
+	// &Main {
+	// 	@extend %buttonShared;
+	// 	color: vars.setTextColor(vars.$color1);
+	// 	background-color: vars.$color1;
+	// }
 
-	&Light {
-		@extend %buttonShared;
-		color: vars.setTextColor(vars.$lightColor);
-		background-color: vars.$lightColor;
-	}
+	// &Light {
+	// 	@extend %buttonShared;
+	// 	color: vars.setTextColor(vars.$light);
+	// 	background-color: vars.$light;
+	// }
 
-	&Dark {
-		@extend %buttonShared;
-		color: vars.setTextColor(vars.$darkColor);
-		background-color: vars.$darkColor;
-	}
+	// &Dark {
+	// 	@extend %buttonShared;
+	// 	color: vars.setTextColor(vars.$dark);
+	// 	background-color: vars.$dark;
+	// }
 
 	&Featured {
 		@extend %buttonShared;
@@ -44,14 +44,14 @@
 	}
 }
 
-button[class^="button"]:hover,
-a.buttonMain:hover,
-a.buttonLight:hover,
-a.buttonDark:hover,
-input[class^="button"]:hover {
-	background-color: vars.$color2;
-	color: vars.setTextColor(vars.$color2);
-}
+// button[class^="button"]:hover,
+// a.buttonMain:hover,
+// a.buttonLight:hover,
+// a.buttonDark:hover,
+// input[class^="button"]:hover {
+// 	background-color: vars.$color2;
+// 	color: vars.setTextColor(vars.$color2);
+// }
 
 .buttonFeatured:hover {
 	background: lighten(vars.$featuredColor, 8%);
@@ -59,24 +59,24 @@ input[class^="button"]:hover {
 }
 
 // Backgrounds
-.bg {
-	&Main {
-		background: vars.$color1;
-		color: vars.$lightColor;
-	}
-	&Dark {
-		background: vars.$darkColor;
-		color: vars.$lightColor;
-	}
-	&Light {
-		background: vars.$lightColor;
-		color: vars.$darkColor;
-	}
-	&Medium {
-		background: vars.$medColor;
-		color: vars.$darkColor;
-	}
-}
+// .bg {
+// 	&Main {
+// 		background: vars.$color1;
+// 		color: vars.$light;
+// 	}
+// 	&Dark {
+// 		background: vars.$dark;
+// 		color: vars.$light;
+// 	}
+// 	&Light {
+// 		background: vars.$light;
+// 		color: vars.$dark;
+// 	}
+// 	&Medium {
+// 		background: vars.$medium;
+// 		color: vars.$dark;
+// 	}
+// }
 
 .lead {
 	font-size: 2rem;

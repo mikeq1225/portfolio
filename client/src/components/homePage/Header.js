@@ -89,7 +89,7 @@ export default (props) => {
 						<p className="lead">
 							I build web applications with a focus on the end user
 						</p>
-						<Link to="/Work" className="buttonMain">
+						<Link to="/Work" className="headerButton">
 							View My Work
 						</Link>
 					</div>

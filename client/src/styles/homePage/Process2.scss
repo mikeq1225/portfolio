@@ -4,7 +4,7 @@ div#process {
 	section {
 		div#timeline {
 			ul {
-				background: vars.$lightColor;
+				background: vars.$color6;
 
 				li {
 					list-style: none;
@@ -12,15 +12,15 @@ div#process {
 					width: 6px;
 					margin: 0 auto;
 					padding: 3rem 0 0 0;
-					background: vars.$color5;
+					background: vars.$color2;
 
 					div {
 						div {
+							@include vars.background(vars.$color1);
 							position: relative;
 							bottom: 0;
 							width: 400px;
 							padding: 2rem;
-							background: vars.$color2;
 							transition: all 0.5s ease-in-out;
 
 							h3 {
@@ -38,12 +38,12 @@ div#process {
 
 							h2 {
 								font-size: 2.2rem;
-								color: vars.$color3;
+								color: inherit;
 							}
 
 							p {
+								color: inherit;
 								font-size: 1.5rem;
-								color: vars.$lightColor;
 							}
 
 							/* Arrows base style */
@@ -80,7 +80,7 @@ div#process {
 							&:before {
 								left: -15px;
 								border-width: 8px 16px 8px 0;
-								border-color: transparent vars.$color2 transparent transparent;
+								border-color: transparent vars.$color1 transparent transparent;
 							}
 						}
 					}
@@ -94,7 +94,7 @@ div#process {
 							&:before {
 								right: -15px;
 								border-width: 8px 0px 8px 16px;
-								border-color: transparent transparent transparent vars.$color2;
+								border-color: transparent transparent transparent vars.$color1;
 							}
 						}
 					}
@@ -163,8 +163,7 @@ div#process {
 								&:before {
 									left: -15px;
 									border-width: 8px 16px 8px 0;
-									border-color: transparent vars.$medColor transparent
-										transparent;
+									border-color: transparent vars.$color1 transparent transparent;
 								}
 							}
 						}
