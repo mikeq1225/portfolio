@@ -17,24 +17,6 @@
 
 // Buttons
 .button {
-	// &Main {
-	// 	@extend %buttonShared;
-	// 	color: vars.setTextColor(vars.$color1);
-	// 	background-color: vars.$color1;
-	// }
-
-	// &Light {
-	// 	@extend %buttonShared;
-	// 	color: vars.setTextColor(vars.$light);
-	// 	background-color: vars.$light;
-	// }
-
-	// &Dark {
-	// 	@extend %buttonShared;
-	// 	color: vars.setTextColor(vars.$dark);
-	// 	background-color: vars.$dark;
-	// }
-
 	&Featured {
 		@extend %buttonShared;
 		color: vars.setTextColor(vars.$featuredColor);
@@ -44,39 +26,10 @@
 	}
 }
 
-// button[class^="button"]:hover,
-// a.buttonMain:hover,
-// a.buttonLight:hover,
-// a.buttonDark:hover,
-// input[class^="button"]:hover {
-// 	background-color: vars.$color2;
-// 	color: vars.setTextColor(vars.$color2);
-// }
-
 .buttonFeatured:hover {
 	background: lighten(vars.$featuredColor, 8%);
 	border: 1px solid vars.$highlightColor;
 }
-
-// Backgrounds
-// .bg {
-// 	&Main {
-// 		background: vars.$color1;
-// 		color: vars.$light;
-// 	}
-// 	&Dark {
-// 		background: vars.$dark;
-// 		color: vars.$light;
-// 	}
-// 	&Light {
-// 		background: vars.$light;
-// 		color: vars.$dark;
-// 	}
-// 	&Medium {
-// 		background: vars.$medium;
-// 		color: vars.$dark;
-// 	}
-// }
 
 .lead {
 	font-size: 2rem;
@@ -134,4 +87,16 @@
 	&4 {
 		margin: 4rem 0;
 	}
+}
+
+// https://codepen.io/sosuke/pen/Pjoqqp - use this to generate the filter
+// SVG filter classes to change color
+.filterColor1 {
+	filter: invert(47%) sepia(98%) saturate(1347%) hue-rotate(152deg)
+		brightness(90%) contrast(101%);
+}
+
+.filterColor2 {
+	filter: invert(78%) sepia(35%) saturate(6473%) hue-rotate(34deg)
+		brightness(98%) contrast(101%);
 }

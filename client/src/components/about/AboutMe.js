@@ -7,14 +7,17 @@ export default (props) => {
 		<div id="about">
 			<section className="textCenter py3">
 				<div className="container">
-					<p className="lead">What makes me who I am?</p>
+					{/* <p className="lead">I am Me. Nothing more. Nothing less.</p> */}
+					<p className="lead">
+						"As much as talent counts, effort counts twice."
+					</p>
 					<div className="bottomLine"></div>
 					<div className="info">
 						<div className="bioImage">
 							<img src="/assets/michael1.jpg" alt="Michael Quarne" />
-							<img src="/assets/michael2.jpg" alt="Michael Quarne" />
-							<img src="/assets/michael3.jpg" alt="Michael Quarne" />
-							<img src="/assets/michael6.jpg" alt="Michael Quarne" />
+							<img src="/assets/michael7.jpg" alt="Michael Quarne" />
+							<img src="/assets/michael4.jpg" alt="Michael and wife" />
+							<img src="/assets/michael5.jpg" alt="Michael and wife" />
 						</div>
 						<div className="bio">
 							{/* <h4>What makes me who I am</h4> */}

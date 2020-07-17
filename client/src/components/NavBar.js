@@ -10,8 +10,9 @@ export default (props) => {
 					<Link to="/Home">
 						<img
 							id="logo"
-							src="/assets/MichaelQuarneLogo.png"
+							src="/assets/MichaelQuarneLogoBlack.svg"
 							alt="Michael Quarne logo"
+							className="filterColor1"
 						/>
 					</Link>
 					<ul>
