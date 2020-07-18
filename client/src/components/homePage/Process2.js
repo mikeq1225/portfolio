@@ -24,7 +24,7 @@ export default (props) => {
 							<ScrollAnimation
 								animateIn="animate__fadeInRightBig"
 								offset={150}
-								duration={1.5}
+								duration={1}
 								animateOnce={true}
 							>
 								<div>
@@ -43,7 +43,7 @@ export default (props) => {
 							<ScrollAnimation
 								animateIn="animate__fadeInLeftBig"
 								offset={150}
-								duration={1.5}
+								duration={1}
 								animateOnce={true}
 							>
 								<div>
@@ -63,7 +63,7 @@ export default (props) => {
 							<ScrollAnimation
 								animateIn="animate__fadeInRightBig"
 								offset={150}
-								duration={1.5}
+								duration={1}
 								animateOnce={true}
 							>
 								<div>
@@ -83,7 +83,7 @@ export default (props) => {
 							<ScrollAnimation
 								animateIn="animate__fadeInLeftBig"
 								offset={150}
-								duration={1.5}
+								duration={1}
 								animateOnce={true}
 							>
 								<div>
@@ -102,7 +102,7 @@ export default (props) => {
 							<ScrollAnimation
 								animateIn="animate__fadeInRightBig"
 								offset={150}
-								duration={1.5}
+								duration={1}
 								animateOnce={true}
 							>
 								<div>

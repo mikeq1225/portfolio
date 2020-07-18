@@ -25,7 +25,7 @@ export default (props) => {
 					arrow.classList.add("rotate")
 					panel.classList.add("show")
 					panel.classList.remove("hide")
-				}, index * 1200)
+				}, index * 150)
 			})
 		})
 	}
