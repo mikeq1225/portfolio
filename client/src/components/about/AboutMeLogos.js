@@ -10,7 +10,7 @@ export default (props) => {
 						<img src="/assets/logos/html5Logo.png" alt="HTML 5" />
 						<img src="/assets/logos/css3Logo.png" alt="CSS 3" />
 						<img src="/assets/logos/javaScriptLogo.png" alt="JavaScript" />
-						<img src="/assets/logos/ReactLogo.png" alt="React" />
+						<img src="/assets/logos/ReactLogo2.png" alt="React" />
 						<img src="/assets/logos/ReduxLogo.png" alt="Redux" />
 						<img src="/assets/logos/sassLogo.png" alt="Sass" />
 						<img src="/assets/logos/nodeJSLogo.png" alt="Node.js" />
