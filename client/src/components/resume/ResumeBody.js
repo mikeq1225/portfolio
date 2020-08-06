@@ -8,7 +8,9 @@ export default (props) => {
 	const mustang = projects.find(
 		(project) => project.title === "Mustang Photo Album"
 	)
-	const ryan = projects.find((project) => project.title === "RyansList")
+	const shopify = projects.find(
+		(project) => project.title === "Shopify StoreFront API Examples"
+	)
 	const superman = projects.find(
 		(project) => project.title === "Superman Memory Game"
 	)
@@ -139,7 +141,36 @@ export default (props) => {
 							</div>
 							<ul className="panel hide">
 								<li>
-									<a href={feature.link}>
+									<a
+										href={shopify && shopify.link}
+										target="_blank"
+										rel="noopener noreferrer"
+									>
+										<h2>Shopify StoreFront API Examples</h2>
+									</a>
+									<h4>Open Source Contribution</h4>
+									<p>
+										Created{" "}
+										<a
+											href={shopify && shopify.link2}
+											target="_blank"
+											rel="noopener noreferrer"
+										>
+											reactHooks-redux-js-buy
+										</a>{" "}
+										folder to add to Shopify Storefront API's open source
+										examples of how to build custom e-commerce websites.
+										Refactored legacy React class based components into
+										functional components and added Redux for predictable state
+										management that is accessible everywhere in the app.
+									</p>
+								</li>
+								<li>
+									<a
+										href={feature.link}
+										target="_blank"
+										rel="noopener noreferrer"
+									>
 										<h2>Jurn(ease) vacation planning app</h2>
 									</a>
 									<h4>Capstone Project for PunchCode</h4>
@@ -152,7 +183,11 @@ export default (props) => {
 									</p>
 								</li>
 								<li>
-									<a href={mustang && mustang.link}>
+									<a
+										href={mustang && mustang.link}
+										target="_blank"
+										rel="noopener noreferrer"
+									>
 										<h2>mustang photo album</h2>
 									</a>
 									<p>
@@ -163,17 +198,11 @@ export default (props) => {
 									</p>
 								</li>
 								<li>
-									<a href={ryan && ryan.link}>
-										<h2>Ryan'sList</h2>
-									</a>
-									<p>
-										Created a replica "CraigsList" website using JavaScript,
-										React, and Redux on the front-end with Express and MySQL on
-										the back-end.
-									</p>
-								</li>
-								<li>
-									<a href={superman && superman.link}>
+									<a
+										href={superman && superman.link}
+										target="_blank"
+										rel="noopener noreferrer"
+									>
 										<h2>Superman memory game</h2>
 									</a>
 									<p>

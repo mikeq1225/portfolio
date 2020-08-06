@@ -10,6 +10,24 @@ app.use(express.static(path.join(__dirname, "public")))
 
 const workItems = [
 	{
+		id: 11,
+		title: "Shopify StoreFront API Examples",
+		subtitle: "",
+		brief: "Contributed to Shopify's StoreFront API",
+		category: "Open Source Contribution",
+		description:
+			"Created reactHooks-redux-js-buy folder to add to Shopify Storefront API's open source examples of how to build custom e-commerce websites.  Refactored legacy React class based components into functional components and added Redux for predictable state management that is accessible everywhere in the app.",
+		problem: "I wanted a scalable solution and predictable state management.",
+		lessons:
+			"I learned how to use React Router to create the routes for each component and make it possible to switch between those routes without reloading the page.",
+		tech: "React, Redux",
+		image: "",
+		image2: "",
+		link: "https://github.com/Shopify/storefront-api-examples",
+		link2:
+			"https://github.com/Shopify/storefront-api-examples/tree/master/reactHooks-redux-js-buy",
+	},
+	{
 		id: 1,
 		title: "Jurn(ease)",
 		subtitle: "Capstone project",

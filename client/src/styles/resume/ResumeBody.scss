@@ -106,6 +106,13 @@
 										cursor: pointer;
 									}
 								}
+
+								p {
+									a {
+										color: vars.$color1;
+										text-decoration: none;
+									}
+								}
 							}
 						}
 					}
