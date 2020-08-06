@@ -8,6 +8,7 @@ const initialState = {
 	projects: [],
 	project: [],
 	feature: [],
+	openSource: [],
 }
 
 export default (state = initialState, action) => {
@@ -29,6 +30,7 @@ function getProjects() {
 				payload: {
 					projects: resp.data.projects.projects,
 					feature: resp.data.projects.feature[0],
+					openSource: resp.data.projects.openSource[0],
 				},
 			})
 		})
@@ -81,9 +83,18 @@ export function useProjects() {
 	const projects = useSelector((appState) => appState.projectState.projects)
 	const project = useSelector((appState) => appState.projectState.project)
 	const feature = useSelector((appState) => appState.projectState.feature)
+	const openSource = useSelector((appState) => appState.projectState.openSource)
 	const fetchProjects = () => dispatch(getProjects())
 	const fetchProject = (id) => dispatch(getProject(id))
 	const fetchLinks = (id) => getLinks(id)
 
-	return { projects, project, feature, fetchProject, fetchProjects, fetchLinks }
+	return {
+		projects,
+		project,
+		feature,
+		openSource,
+		fetchProject,
+		fetchProjects,
+		fetchLinks,
+	}
 }

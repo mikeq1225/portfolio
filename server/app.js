@@ -15,13 +15,14 @@ const workItems = [
 		subtitle: "",
 		brief: "Contributed to Shopify's StoreFront API",
 		category: "Open Source Contribution",
-		description:
-			"Created reactHooks-redux-js-buy folder to add to Shopify Storefront API's open source examples of how to build custom e-commerce websites.  Refactored legacy React class based components into functional components and added Redux for predictable state management that is accessible everywhere in the app.",
-		problem: "I wanted a scalable solution and predictable state management.",
+		problem:
+			"I was working on a client's project to create a custom e-commerce website but with the security features built into Shopify. How was I going to incorporate Shopify StoreFront API with my website? I found examples of how to integrate the StoreFront API, but the React version didn't have a scalable solution with predictable state management.",
+		solution:
+			"I created the reactHooks-redux-js-buy folder in Shopify's Storefront API Examples Github repository.  I refactored legacy React class based components into functional components and added Redux for predictable state management that is accessible everywhere in the app.",
 		lessons:
-			"I learned how to use React Router to create the routes for each component and make it possible to switch between those routes without reloading the page.",
+			"At first I just wanted to see if I could do it for my project. I soon realized that I could, and thought I should try to send my code to Shopify so it could help others in my same scenario.",
 		tech: "React, Redux",
-		image: "",
+		image: "/assets/logos/shopifyLogo.png",
 		image2: "",
 		link: "https://github.com/Shopify/storefront-api-examples",
 		link2:
@@ -204,18 +205,23 @@ app.get("/api/projects", (req, res) => {
 	const projects = {
 		projects: [],
 		feature: [],
+		openSource: [],
 	}
 	workItems.map((project) => {
-		if (project.id !== 1) {
+		if (project.id === 1) {
+			projects.feature.push(project)
+		} else if (project.id === 11) {
+			projects.openSource.push(project)
+		} else {
 			projects.projects.push(project)
 		}
 	})
 
-	workItems.map((project) => {
-		if (project.id === 1) {
-			projects.feature.push(project)
-		}
-	})
+	// workItems.map((project) => {
+	// 	if (project.id === 1) {
+	// 		projects.feature.push(project)
+	// 	}
+	// })
 	res.json({ projects: projects })
 })
 

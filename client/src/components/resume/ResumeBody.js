@@ -4,12 +4,9 @@ import "../../styles/resume/ResumeBody.scss"
 import { FaChevronRight } from "react-icons/fa"
 
 export default (props) => {
-	const { feature, projects, fetchProjects } = useProjects()
+	const { feature, projects, openSource, fetchProjects } = useProjects()
 	const mustang = projects.find(
 		(project) => project.title === "Mustang Photo Album"
-	)
-	const shopify = projects.find(
-		(project) => project.title === "Shopify StoreFront API Examples"
 	)
 	const superman = projects.find(
 		(project) => project.title === "Superman Memory Game"
@@ -142,7 +139,7 @@ export default (props) => {
 							<ul className="panel hide">
 								<li>
 									<a
-										href={shopify && shopify.link}
+										href={openSource.link}
 										target="_blank"
 										rel="noopener noreferrer"
 									>
@@ -152,7 +149,7 @@ export default (props) => {
 									<p>
 										Created{" "}
 										<a
-											href={shopify && shopify.link2}
+											href={openSource.link2}
 											target="_blank"
 											rel="noopener noreferrer"
 										>
