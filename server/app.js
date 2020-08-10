@@ -16,7 +16,7 @@ const workItems = [
 		brief: "Contributed to Shopify's StoreFront API",
 		category: "Open Source Contribution",
 		problem:
-			"I was working on a client's project to create a custom e-commerce website but with the security features built into Shopify. How was I going to incorporate Shopify StoreFront API with my website? I found examples of how to integrate the StoreFront API, but the React version didn't have a scalable solution with predictable state management.",
+			"I was working on a client's project to create a custom e-commerce website that can utilize the security features built into Shopify. How was I going to incorporate Shopify StoreFront API with my website? I found examples of how to integrate the StoreFront API, but the React version didn't have a scalable solution with predictable state management.",
 		solution:
 			"I created the reactHooks-redux-js-buy folder in Shopify's Storefront API Examples Github repository.  I refactored legacy React class based components into functional components and added Redux for predictable state management that is accessible everywhere in the app.",
 		lessons:
