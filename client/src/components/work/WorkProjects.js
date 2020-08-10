@@ -11,7 +11,7 @@ export default (props) => {
 	}, [])
 
 	return (
-		<div id="workProjects" className="padY3">
+		<div id="workProjects">
 			<div className="container">
 				<h2 className="sectionTitle">More Work</h2>
 				<div className="bottomLine"></div>
