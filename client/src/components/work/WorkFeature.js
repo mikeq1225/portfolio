@@ -19,34 +19,33 @@ export default (props) => {
 					Click "Jurn(ease) Live" to check out the application. Register a made
 					up account to look around inside.
 				</p>
-				<div>
-					<a
-						className="buttonFeatured"
-						href={feature.link}
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						{feature.title} Live
-					</a>
-					<a
-						className="buttonFeatured"
-						href={feature.link2}
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						{feature.title} Presentation
-					</a>
-					<a
-						className="buttonFeatured"
-						href={feature.link3}
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						{feature.title} Demonstration
-					</a>
-				</div>
-
 				<div className="featureContainer">
+					<div className="fButtons">
+						<a
+							className="buttonFeatured"
+							href={feature.link}
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							{feature.title} Live
+						</a>
+						<a
+							className="buttonFeatured"
+							href={feature.link2}
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							{feature.title} Presentation
+						</a>
+						<a
+							className="buttonFeatured"
+							href={feature.link3}
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							{feature.title} Demonstration
+						</a>
+					</div>
 					<img src={feature.image} alt={feature.title + " replica"} />
 					<div>
 						<p>{feature.description}</p>

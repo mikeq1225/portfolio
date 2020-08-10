@@ -3,16 +3,13 @@
 div#workProjects {
 	div.container {
 		div.openSource {
-			display: grid;
-			grid-template-areas:
-				"title title"
-				"logo desc";
-			grid-template-columns: 35% auto;
+			display: flex;
+			flex-direction: column;
 			align-items: center;
+			justify-content: center;
 			margin: 2rem 0 5rem 0;
 
 			h3.openTitle {
-				grid-area: title;
 				text-align: center;
 				font-size: 2.5rem;
 				text-transform: uppercase;
@@ -21,18 +18,17 @@ div#workProjects {
 			}
 
 			img {
-				grid-area: logo;
+				width: 30%;
+				margin: 1rem;
 			}
 
 			div {
-				grid-area: desc;
-
 				p {
 					font-size: 2rem;
 				}
 
 				h4 {
-					font-size: 2rem;
+					font-size: 2.5rem;
 					text-align: center;
 					color: vars.$color1;
 				}
@@ -91,7 +87,6 @@ div#workProjects {
 						display: block;
 						transform: translateZ(0);
 						transition: transform 0.75s cubic-bezier(0.2, 1, 0.3, 1);
-						// max-height: 220px;
 
 						&:before {
 							content: "";
@@ -155,25 +150,26 @@ div#workProjects {
 	}
 }
 
-@media (max-width: 1025px) {
+@media (max-width: 1050px) {
 	div#workProjects {
 		div.container {
 			div.openSource {
-				grid-template-areas:
-					"logo title"
-					"desc desc";
-				grid-template-columns: 25% auto;
 				margin: 0 0 3rem 0;
 			}
 
 			div.projects {
 				grid-template-columns: 1fr 1fr;
 				grid-gap: 1rem;
+
 				a {
 					div.project {
 						div.projectText {
 							opacity: 1;
 						}
+					}
+
+					&:last-child {
+						display: none;
 					}
 				}
 			}
@@ -187,26 +183,24 @@ div#workProjects {
 
 		div.container {
 			div.openSource {
-				grid-template-areas:
-					"title"
-					"logo"
-					"desc";
-				grid-template-columns: 1fr;
-				margin: 0 0 3rem 0;
-				justify-items: center;
-
 				h3.openTitle {
 					font-size: 2rem;
 				}
 
 				img {
-					width: 60%;
+					width: 70%;
 				}
 			}
 
 			div.projects {
 				grid-gap: 1rem;
 				grid-template-columns: 1fr;
+
+				a {
+					&:last-child {
+						display: block;
+					}
+				}
 			}
 		}
 	}
