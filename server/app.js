@@ -20,7 +20,7 @@ const workItems = [
 		solution:
 			"I created the reactHooks-redux-js-buy folder in Shopify's Storefront API Examples Github repository.  I refactored legacy React class based components into functional components and added Redux for predictable state management that is accessible everywhere in the app.",
 		lessons:
-			"At first I just wanted to see if I could do it for my project. I soon realized that I could, and thought I should try to send my code to Shopify so it could help others in my same scenario.",
+			"At first I just wanted to see if I could do it for my project. Then I thought there might be others who could benefit from this. So I turned the code from my client's project into a working example like in the Storefront examples repository and sent a pull request to Shopify.  Now it has been merged into the master and available for everyone.  Visit my client's site by clicking the Vethead Project below.",
 		tech: "React, Redux",
 		image: "/assets/logos/shopifyLogo.png",
 		image2: "",
@@ -47,6 +47,24 @@ const workItems = [
 		link: "https://aqueous-refuge-23431.herokuapp.com",
 		link2: "https://www.youtube.com/watch?v=pT18Us8sayw&feature=youtu.be",
 		link3: "https://www.youtube.com/watch?v=IgaI8lv1QOQ&feature=youtu.be",
+	},
+	{
+		id: 12,
+		title: "Vethead Brand",
+		subtitle: "Client Project",
+		brief: "Custom Shopify Storefront",
+		category: "E-Commerce Website",
+		description:
+			"A React E-Commerce website created from scratch that integrates with Shopify.",
+		problem:
+			"Creating a custom Shopify website that has all the safety and security associated with Shopify.",
+		lessons:
+			"I learned how to integrate Shopify's Storefront API into a custom e-commerce website.",
+		tech:
+			"HTML, CSS, JavaScript, React, React Router, Shopify's Storefront API",
+		image: "/assets/VetheadReflection1.jpg",
+		image2: "",
+		link: "https://www.vetheadbrand.com/",
 	},
 	{
 		id: 4,
@@ -116,23 +134,6 @@ const workItems = [
 		image: "/assets/supermanVSluthor.jpg",
 		image2: "/assets/memory2.png",
 		link: "https://mikeq1225.github.io/Memory/",
-	},
-	{
-		id: 6,
-		title: "BarCade Restaurant",
-		subtitle: "3rd project",
-		brief: "Group Project of a fictional restaurant",
-		category: "Website",
-		description:
-			"A group assingment where we utilized Github for version control and collaboration to make a website for a fictional restaurant. We were given a JSON file with menu items.",
-		problem:
-			"How do we work on the same project without causing problems and still creating a cohesive looking website.",
-		lessons:
-			"I learned how to use Github's branches to ensure my team could work on the same website but in different sections to avoid conflicts.",
-		tech: "HTML, CSS, JavaScript, jQuery, GitHub",
-		image: "/assets/barCade1.jpg",
-		image2: "/assets/GroupProject.png",
-		link: "https://mikeq1225.github.io/Group-Project/",
 	},
 	{
 		id: 9,
@@ -217,22 +218,7 @@ app.get("/api/projects", (req, res) => {
 		}
 	})
 
-	// workItems.map((project) => {
-	// 	if (project.id === 1) {
-	// 		projects.feature.push(project)
-	// 	}
-	// })
 	res.json({ projects: projects })
-})
-
-app.get("/api/projects/:id", (req, res) => {
-	const id = Number(req.params.id)
-	const project = projects.find((project) => project.id === id)
-	if (project) {
-		res.json(project)
-	} else {
-		res.json("No project found")
-	}
 })
 
 // The "catchall" handler: for any request that doesn't match one above, send back React's index.html file.

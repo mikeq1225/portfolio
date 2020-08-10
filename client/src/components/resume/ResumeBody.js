@@ -99,10 +99,9 @@ export default (props) => {
 										<li>CSS,</li>
 										<li>Node.js,</li>
 										<li>Express,</li>
-										<li>Semantic UI,</li>
+										<li>Shopify Storefront API,</li>
 										<li>Sass,</li>
 										<li>jQuery,</li>
-										<li>Socket.IO,</li>
 										<li>MySQL,</li>
 										<li>JSON-Server,</li>
 										<li>AWS-RDS,</li>
