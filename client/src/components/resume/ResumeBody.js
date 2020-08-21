@@ -8,9 +8,10 @@ export default (props) => {
 	const mustang = projects.find(
 		(project) => project.title === "Mustang Photo Album"
 	)
-	const superman = projects.find(
-		(project) => project.title === "Superman Memory Game"
-	)
+	const vethead = projects.find((project) => project.title === "Vethead Brand")
+	// const superman = projects.find(
+	// 	(project) => project.title === "Superman Memory Game"
+	// )
 
 	document.addEventListener("DOMContentLoaded", start)
 
@@ -158,13 +159,27 @@ export default (props) => {
 									>
 										<h2>Jurn(ease) vacation planning app</h2>
 									</a>
-									<h4>Capstone Project for PunchCode</h4>
 									<p>
 										Worked with a team remotely to plan, design, and build a
 										vacation planning web application using GitHub for version
 										control. Utilized JavaScript, React, Redux, HTML, Sass CSS
-										to build the front-end with Express and MySQL for the
-										back-end.
+										to build the front-end. Used Express and JSON web tokens to
+										authenticate to a AWS-RDS MySQL database for the back-end.
+									</p>
+								</li>
+								<li>
+									<a
+										href={vethead && vethead.link}
+										target="_blank"
+										rel="noopener noreferrer"
+									>
+										<h2>vethead brand</h2>
+									</a>
+									<p>
+										A custom e-commerce website built with React, and styled
+										using Sass. It integrates Shopify's Storefront API into the
+										custom website to handle authentication to client's Shopify
+										store and is hosted on Netlify.
 									</p>
 								</li>
 								<li>
@@ -176,13 +191,14 @@ export default (props) => {
 										<h2>mustang photo album</h2>
 									</a>
 									<p>
-										Photo album using JavaScript with React and a MySQL database
-										to present images tied to specific Mustang Models in their
-										own folders. The code components can easily be used anywhere
-										a photo album is needed.
+										Photo album using functional components in React to create a
+										stand alone app that can also easily be reused in another
+										React application where a photo album is needed. Used a
+										JSON-server database to present images tied to specific
+										Mustang Models in their own folders.
 									</p>
 								</li>
-								<li>
+								{/* <li>
 									<a
 										href={superman && superman.link}
 										target="_blank"
@@ -194,7 +210,7 @@ export default (props) => {
 										A Superman memory game using JavaScript and jQuery to try to
 										prevent Lex Luthor from taking over the world.
 									</p>
-								</li>
+								</li> */}
 							</ul>
 						</li>
 						<li id="education">
