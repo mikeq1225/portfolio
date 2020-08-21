@@ -25,7 +25,7 @@ export default (props) => {
 								<GiWorld />
 							</li>
 							<li className="title">Deployed Projects</li>
-							<li className="number">11</li>
+							<li className="number">12</li>
 						</ul>
 					</div>
 					<div>
@@ -34,7 +34,7 @@ export default (props) => {
 								<DiGitPullRequest />
 							</li>
 							<li className="title">GitHub Contributions</li>
-							<li className="number">900+</li>
+							<li className="number">1100+</li>
 						</ul>
 					</div>
 					<div>
