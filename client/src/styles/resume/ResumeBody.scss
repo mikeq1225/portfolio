@@ -67,25 +67,12 @@
 
 					&#skills {
 						ul.panel {
+							display: grid;
+							grid-template-columns: repeat(4, 1fr);
+
 							li {
-								font-weight: bold;
-								text-transform: uppercase;
-								display: flex;
 								font-size: 1.6rem;
-								margin: 1rem 0;
-
-								ul {
-									display: flex;
-									padding: 0;
-									margin: 0 0 0 0.3rem;
-
-									li {
-										font-weight: normal;
-										font-size: 1.5rem;
-										margin: 0 0.25rem 0 0;
-										text-transform: capitalize;
-									}
-								}
+								margin: 0 0 0.5rem 0;
 							}
 						}
 					}

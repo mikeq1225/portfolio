@@ -77,57 +77,46 @@ export default (props) => {
 								<h2>Summary</h2>
 							</div>
 							<p className="panel hide">
-								Creative, technical, design-savvy recent coding program graduate
-								fluent in JavaScript, HTML, and CSS. Excited to blend
-								professional experience with hands-on technical training in a
-								junior-level software engineering role.
+								Creative, technical, design-savvy developer fluent in
+								JavaScript, React, HTML, and CSS. Excited to blend professional
+								experience with hands-on technical training in a junior-level
+								software engineering role.
 							</p>
 						</li>
 						<li id="skills">
 							<div className="title" onClick={(e) => display(e)}>
 								<FaChevronRight />
-								<h2>Skills</h2>
+								<h2>Key Skills</h2>
 							</div>
 							<ul className="panel hide">
-								<li>
-									Programming languages:
-									<ul>
-										<li>JavaScript,</li>
-										<li>React,</li>
-										<li>Redux,</li>
-										<li>HTML,</li>
-										<li>CSS,</li>
-										<li>Node.js,</li>
-										<li>Express,</li>
-										<li>Shopify Storefront API,</li>
-										<li>Sass,</li>
-										<li>jQuery,</li>
-										<li>MySQL,</li>
-										<li>JSON-Server,</li>
-										<li>AWS-RDS,</li>
-										<li>Git</li>
-									</ul>
-								</li>
-								<li>
-									Software:
-									<ul>
-										<li>Visual Studio Code,</li>
-										<li>Mac iOS</li>
-										<li>Windows 7/8/10,</li>
-										<li>Microsoft Office,</li>
-										<li>Office 365,</li>
-										<li>Google Drive</li>
-									</ul>
-								</li>
-								<li>
-									Remote work:
-									<ul>
-										<li>Agile &amp; Scrum Project Management,</li>
-										<li>GitHub Version Control,</li>
-										<li>Zoom video conferencing,</li>
-										<li>Slack messaging</li>
-									</ul>
-								</li>
+								<li>JavaScript</li>
+								<li>React</li>
+								<li>Redux</li>
+								<li>HTML</li>
+								<li>CSS</li>
+								<li>Sass</li>
+								<li>jQuery</li>
+								<li>Semantic UI</li>
+								<li>REST API</li>
+								<li>Node.js</li>
+								<li>Express</li>
+								<li>MySQL</li>
+								<li>JSON-Server</li>
+								<li>AWS-RDS</li>
+								<li>Shopify Storefront API</li>
+								<li>Heroku / Netlify</li>
+								<li>NginX</li>
+								<li>Git</li>
+								<li>Agile &amp; Scrum Processes</li>
+								<li>GitHub Version Control</li>
+								{/* <li>Visual Studio Code</li>
+								<li>Mac iOS</li>
+								<li>Windows 7/8/10</li>
+								<li>Microsoft Office</li>
+								<li>Office 365</li>
+								<li>Google Drive</li> */}
+								{/* <li>Zoom video conferencing</li> */}
+								{/* <li>Slack messaging</li> */}
 							</ul>
 						</li>
 						<li id="projects">
