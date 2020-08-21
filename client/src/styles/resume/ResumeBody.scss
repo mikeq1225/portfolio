@@ -171,14 +171,8 @@
 					li {
 						&#skills {
 							ul.panel {
-								li {
-									flex-direction: column;
-
-									ul {
-										display: grid;
-										grid-template-columns: repeat(5, 1fr);
-									}
-								}
+								display: grid;
+								grid-template-columns: repeat(3, 1fr);
 							}
 						}
 					}
@@ -196,12 +190,12 @@
 					li {
 						&#skills {
 							ul.panel {
-								li {
-									flex-direction: column;
+								grid-template-columns: repeat(2, 1fr);
+								justify-items: center;
+								text-align: center;
 
-									ul {
-										grid-template-columns: repeat(2, 1fr);
-									}
+								li {
+									font-size: 1.4rem;
 								}
 							}
 						}
