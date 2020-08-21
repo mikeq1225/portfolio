@@ -77,6 +77,24 @@
 						}
 					}
 
+					&#experience {
+						ul.panel {
+							li {
+								div {
+									ul {
+										padding: 0 3rem;
+
+										li {
+											margin: 0;
+											list-style: disc;
+											font-size: 1.6rem;
+										}
+									}
+								}
+							}
+						}
+					}
+
 					&#projects {
 						ul {
 							li {
@@ -104,6 +122,7 @@
 						}
 					}
 
+					&#experience,
 					&#education,
 					&#employment,
 					&#projects {
@@ -200,6 +219,19 @@
 							}
 						}
 
+						&#experience {
+							ul.panel {
+								li {
+									div {
+										ul {
+											padding: 0 2rem;
+										}
+									}
+								}
+							}
+						}
+
+						&#experience,
 						&#education {
 							ul.panel {
 								li {

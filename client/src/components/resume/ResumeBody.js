@@ -120,6 +120,44 @@ export default (props) => {
 								{/* <li>Slack messaging</li> */}
 							</ul>
 						</li>
+						<li id="experience">
+							<div className="title" onClick={(e) => display(e)}>
+								<FaChevronRight />
+								<h2>Experience</h2>
+							</div>
+							<ul className="panel hide">
+								<li>
+									<div>
+										<div>
+											<a
+												href="https://punchcode.org/"
+												target="_blank"
+												rel="noopener noreferrer"
+											>
+												PunchCode
+											</a>
+											<p>Jan. 2020 - Apr. 2020</p>
+										</div>
+										<h3>Full-Stack Web Developer Bootcamp</h3>
+										<ul>
+											<li>
+												A 720 hour, fully immersive, fast paced program working
+												with a team of developers
+											</li>
+											<li>Quickly built prototypes for websites and apps</li>
+											<li>Built production-quality web applications</li>
+											<li>Developed functional, beautiful interfaces</li>
+											<li>
+												Learned in-depth JavaScript functions, objects, and
+												frameworks
+											</li>
+											<li>Created responsive design for web and mobile</li>
+											<li>Learned how to think and learn like a programmer</li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</li>
 						<li id="projects">
 							<div className="title" onClick={(e) => display(e)}>
 								<FaChevronRight />
@@ -219,25 +257,6 @@ export default (props) => {
 								<h2>Education</h2>
 							</div>
 							<ul className="panel hide">
-								<li>
-									<div>
-										<div>
-											<a
-												href="https://punchcode.org/"
-												target="_blank"
-												rel="noopener noreferrer"
-											>
-												PunchCode
-											</a>
-											<p>Jan. 2020 - Apr. 2020</p>
-										</div>
-										<h3>Full-Stack Web Developer Bootcamp</h3>
-										<p>
-											Intense 3 month full-time boot-camp program in which I
-											learned to build complete web applications
-										</p>
-									</div>
-								</li>
 								<li>
 									<div>
 										<div>
