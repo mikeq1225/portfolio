@@ -4,7 +4,7 @@ import "../../styles/about/AboutMeLogos.scss"
 export default (props) => {
 	return (
 		<div id="aboutLogos">
-			<section className="bgLight py4">
+			<section className="py4">
 				<div className="container">
 					<div className="logos">
 						<img src="/assets/logos/html5Logo.png" alt="HTML 5" />

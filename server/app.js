@@ -20,7 +20,7 @@ const workItems = [
 		solution:
 			"I created the reactHooks-redux-js-buy folder in Shopify's Storefront API Examples Github repository.  I refactored legacy React class based components into functional components and added Redux for predictable state management that is accessible everywhere in the app.",
 		lessons:
-			"At first I just wanted to see if I could do it for my project. Then I thought there might be others who could benefit from this. So I turned the code from my client's project into a working example like in the Storefront examples repository and sent a pull request to Shopify.  Now it has been merged into the master and available for everyone.  Visit my client's site by clicking the Vethead Project below.",
+			"At first I just wanted to see if I could do it for my project. Then I thought there might be others who could benefit from this. So I turned the code from my client's project into a working example like in the Storefront examples repository and sent a pull request to Shopify.  Now it has been merged into the master and available for everyone. To see the code, click the Github Repo button. To see the deployed code in action, visit my client's site by clicking the Vethead Project below.",
 		tech: "React, Redux",
 		image: "/assets/logos/shopifyLogo.png",
 		image2: "",

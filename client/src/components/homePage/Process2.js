@@ -31,7 +31,7 @@ export default (props) => {
 									<h3>
 										<GiTalk />
 									</h3>
-									<h2>Discuss the Project</h2>
+									<h2>Discuss Project</h2>
 									<p>
 										I talk with the customer to find out what their needs and
 										desires are for the project
@@ -50,7 +50,7 @@ export default (props) => {
 									<h3>
 										<MdPhotoSizeSelectSmall />
 									</h3>
-									<h2>Design the Wireframes</h2>
+									<h2>Design Wireframes</h2>
 									<p>
 										Create wireframes based on previous conversations so the
 										customer can see what the project would look like when
@@ -70,7 +70,7 @@ export default (props) => {
 									<h3>
 										<FaCode />
 									</h3>
-									<h2>Write the Code</h2>
+									<h2>Write Code</h2>
 									<p>
 										Write the code for the project and stay in communication
 										with the customer along the way to make sure their needs

@@ -7,7 +7,6 @@ export default (props) => {
 		<div id="about">
 			<section className="textCenter py3">
 				<div className="container">
-					{/* <p className="lead">I am Me. Nothing more. Nothing less.</p> */}
 					<p className="lead">
 						"As much as talent counts, effort counts twice."
 					</p>
@@ -20,7 +19,6 @@ export default (props) => {
 							<img src="/assets/michael8.jpg" alt="Michael and wife" />
 						</div>
 						<div className="bio">
-							{/* <h4>What makes me who I am</h4> */}
 							<p>
 								I am a full-stack web developer from Las Vegas and a graduate
 								from PunchCode’s Full-Stack Software Engineer boot camp. Skilled

@@ -79,7 +79,7 @@ export default (props) => {
 				<div className="container">
 					<div className="headerContent">
 						<h1>
-							I am Michael, A{" "}
+							I am Michael, a{" "}
 							<span
 								className="txt"
 								datawait="3000"

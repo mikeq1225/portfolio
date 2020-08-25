@@ -87,7 +87,7 @@ export default (props) => {
 						<li id="skills">
 							<div className="title" onClick={(e) => display(e)}>
 								<FaChevronRight />
-								<h2>Key Skills</h2>
+								<h2>Skills</h2>
 							</div>
 							<ul className="panel hide">
 								<li>JavaScript</li>

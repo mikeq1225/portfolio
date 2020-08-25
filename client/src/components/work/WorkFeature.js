@@ -21,28 +21,13 @@ export default (props) => {
 				</p>
 				<div className="featureContainer">
 					<div className="fButtons">
-						<a
-							className="buttonFeatured"
-							href={feature.link}
-							target="_blank"
-							rel="noopener noreferrer"
-						>
+						<a href={feature.link} target="_blank" rel="noopener noreferrer">
 							{feature.title} Live
 						</a>
-						<a
-							className="buttonFeatured"
-							href={feature.link2}
-							target="_blank"
-							rel="noopener noreferrer"
-						>
+						<a href={feature.link2} target="_blank" rel="noopener noreferrer">
 							{feature.title} Presentation
 						</a>
-						<a
-							className="buttonFeatured"
-							href={feature.link3}
-							target="_blank"
-							rel="noopener noreferrer"
-						>
+						<a href={feature.link3} target="_blank" rel="noopener noreferrer">
 							{feature.title} Demonstration
 						</a>
 					</div>

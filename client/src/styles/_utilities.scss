@@ -7,30 +7,6 @@
 	overflow: hidden;
 }
 
-%buttonShared {
-	display: inline-block;
-	padding: 1rem 2rem;
-	transition: all 0.5s;
-	border: none;
-	cursor: pointer;
-}
-
-// Buttons
-.button {
-	&Featured {
-		@extend %buttonShared;
-		color: vars.setTextColor(vars.$featuredColor);
-		background-color: vars.$featuredColor;
-		border: 1px solid transparent;
-		border-radius: 5px;
-	}
-}
-
-.buttonFeatured:hover {
-	background: lighten(vars.$featuredColor, 8%);
-	border: 1px solid vars.$highlightColor;
-}
-
 .lead {
 	font-size: 2rem;
 	margin: 0 0 2.5rem 0;
@@ -70,22 +46,6 @@
 	}
 	&4 {
 		padding: 4rem 0;
-	}
-}
-
-// Margin classes
-.marginY {
-	&1 {
-		margin: 1rem 0;
-	}
-	&2 {
-		margin: 2rem 0;
-	}
-	&3 {
-		margin: 3rem 0;
-	}
-	&4 {
-		margin: 4rem 0;
 	}
 }
 
