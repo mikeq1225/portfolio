@@ -78,10 +78,10 @@ export default (props) => {
 								<h2>Summary</h2>
 							</div>
 							<p className="panel hide">
-								Creative, technical, design-savvy developer fluent in
-								JavaScript, React, HTML, and CSS. Excited to blend professional
-								experience with hands-on technical training in a junior-level
-								software engineering role.
+								Creative, technical, design-savvy React developer experienced in
+								implementing highly responsive user interface components through
+								JavaScript and React concepts . Proficient in translating
+								designs and wireframes into high quality code.
 							</p>
 						</li>
 						<li id="skills">
@@ -91,33 +91,25 @@ export default (props) => {
 							</div>
 							<ul className="panel hide">
 								<li>JavaScript</li>
-								<li>React</li>
-								<li>Redux</li>
-								<li>HTML</li>
-								<li>CSS</li>
-								<li>Sass</li>
-								<li>jQuery</li>
-								<li>Semantic UI</li>
-								<li>REST API</li>
+								<li>Algolia</li>
+								<li>GitHub / BitBucket</li>
 								<li>Node.js</li>
-								<li>Express</li>
-								<li>MySQL</li>
-								<li>JSON-Server</li>
-								<li>AWS-RDS</li>
-								<li>Shopify Storefront API</li>
+								<li>React</li>
+								<li>Material UI</li>
 								<li>Heroku / Netlify</li>
-								<li>NginX</li>
-								<li>Git</li>
+								<li>Express</li>
+								<li>Redux</li>
+								<li>Figma</li>
+								<li>Shopify Storefront API</li>
+								<li>REST API</li>
+								<li>HTML</li>
+								<li>Sass</li>
 								<li>Agile &amp; Scrum Processes</li>
-								<li>GitHub Version Control</li>
-								{/* <li>Visual Studio Code</li>
-								<li>Mac iOS</li>
-								<li>Windows 7/8/10</li>
-								<li>Microsoft Office</li>
-								<li>Office 365</li>
-								<li>Google Drive</li> */}
-								{/* <li>Zoom video conferencing</li> */}
-								{/* <li>Slack messaging</li> */}
+								<li>MySQL</li>
+								<li>CSS</li>
+								<li>Jira</li>
+								<li>Git</li>
+								<li>NginX</li>
 							</ul>
 						</li>
 						<li id="experience">

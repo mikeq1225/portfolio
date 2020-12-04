@@ -2,40 +2,59 @@
 
 #workFeature {
 	div.container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
 		p {
 			font-size: 2rem;
 		}
 
 		h1 {
-			margin: 2rem 0;
+			// margin: 2rem 0;
 			font-size: 3rem;
 			color: vars.$color1;
 		}
 
-		.featureContainer {
-			display: grid;
-			grid-template-areas:
-				"buttons buttons"
-				"image desc";
-
-			div.fButtons {
-				grid-area: buttons;
-				display: flex;
-				flex-direction: row;
-				justify-content: space-around;
-
-				a {
-					@include vars.buttonThemed(vars.$color1);
-					font-size: 2rem;
-				}
-			}
+		a {
+			// @include vars.buttonThemed(vars.$color1);
+			// font-size: 2rem;
 
 			img {
-				grid-area: image;
+				transform: scale(1);
+				transition: transform 0.5s ease;
+
+				&:hover {
+					transform: scale(1.1);
+					transition: transform 0.5s ease;
+				}
 			}
+		}
+
+		.featureContainer {
+			display: grid;
+			// grid-template-areas:
+			// 	"buttons buttons"
+			// 	"image desc";
+
+			// div.fButtons {
+			// 	grid-area: buttons;
+			// 	display: flex;
+			// 	flex-direction: row;
+			// 	justify-content: space-around;
+
+			// a {
+			// 	@include vars.buttonThemed(vars.$color1);
+			// 	font-size: 2rem;
+			// }
+			// }
+
+			// img {
+			// 	grid-area: image;
+			// }
 
 			div {
-				grid-area: desc;
+				// grid-area: desc;
 				display: flex;
 				flex-direction: column;
 				align-items: center;
@@ -58,19 +77,19 @@
 	#workFeature {
 		div.container {
 			.featureContainer {
-				grid-template-areas:
-					"image buttons"
-					"desc desc";
+				// grid-template-areas:
+				// 	"image buttons"
+				// 	"desc desc";
 				justify-items: center;
 
-				div.fButtons {
-					flex-direction: column;
-					justify-content: space-evenly;
-				}
+				// div.fButtons {
+				// 	flex-direction: column;
+				// 	justify-content: space-evenly;
+				// }
 
-				img {
-					width: 70%;
-				}
+				// img {
+				// 	width: 70%;
+				// }
 
 				div {
 					padding: 0;
@@ -95,23 +114,23 @@
 			}
 
 			.featureContainer {
-				grid-template-areas:
-					"buttons"
-					"image"
-					"desc";
+				// grid-template-areas:
+				// 	"buttons"
+				// 	"image"
+				// 	"desc";
 
-				div.fButtons {
-					justify-content: space-between;
+				// div.fButtons {
+				// 	justify-content: space-between;
 
-					a {
-						font-size: 1.6rem;
-						margin: 1rem 0;
-					}
-				}
+				// 	a {
+				// 		font-size: 1.6rem;
+				// 		margin: 1rem 0;
+				// 	}
+				// }
 
-				img {
-					width: 90%;
-				}
+				// img {
+				// 	width: 90%;
+				// }
 
 				div {
 					display: flex;

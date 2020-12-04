@@ -1,6 +1,6 @@
 import React, { useEffect } from "react"
 import { useProjects } from "../../hooks"
-import { FaShopify } from "react-icons/fa"
+// import { FaShopify } from "react-icons/fa"
 import "../../styles/work/WorkProjects.scss"
 
 export default (props) => {
