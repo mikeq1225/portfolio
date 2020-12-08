@@ -20,14 +20,12 @@ export default (props) => {
 						</div>
 						<div className="bio">
 							<p>
-								I am a full-stack web developer from Las Vegas and a graduate
-								from PunchCode’s Full-Stack Software Engineer boot camp. Skilled
-								at building web applications from the ground up – from concept,
-								to design, to writing well-designed, testable and efficient code
-								while focusing on UI/UX. The completion of my capstone project,
-								a vacation planning web application called Jurn(ease), showcases
-								all of my current skills. I continue to learn new languages and
-								techniques to improve my overall coding skills.
+								I am a full-stack web developer from Las Vegas. I am skilled at
+								building web applications from the ground up – from concept, to
+								design, to writing well-designed, testable and efficient code
+								while focusing on UI/UX. I continue to learn new languages and
+								techniques through my work and my own side projects that I use
+								to influence and improve my overall coding skills.
 							</p>
 							<p>
 								My coding philosophy starts with strategic planning, designing,

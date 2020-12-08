@@ -29,7 +29,7 @@ const workItems = [
 			"https://github.com/Shopify/storefront-api-examples/tree/master/reactHooks-redux-js-buy",
 	},
 	{
-		id: 1,
+		id: 13,
 		title: "Jurn(ease)",
 		subtitle: "Capstone project",
 		brief: "Complete web application",
@@ -42,11 +42,29 @@ const workItems = [
 			"I learned how to plan and execute a large project, how to take all the languages and tools that I've learned and apply them to one project, how to use AWS as a remote MySQL database for our project, and I learned how to accomplish all of this while working in a remote environment.",
 		tech:
 			"HTML, CSS, Sass, Semantic UI, JavaScript, React, Redux, Node.js, Express, REST APIs, MySQL, AWS-RDS, Slack, Zoom",
-		image: "/assets/JurnEaseScreenShot.png",
-		image2: "/assets/Jurnease2.png",
+		image: "/assets/JurnEase3.png",
+		image2: "/assets/JurnEaseScreenShot.png",
 		link: "https://aqueous-refuge-23431.herokuapp.com",
 		link2: "https://www.youtube.com/watch?v=pT18Us8sayw&feature=youtu.be",
 		link3: "https://www.youtube.com/watch?v=IgaI8lv1QOQ&feature=youtu.be",
+	},
+	{
+		id: 1,
+		title: "TruLocal",
+		subtitle: "My time at TruLocal",
+		brief: "Enterprise level E-Commerce Web App",
+		category: "E-Commerce Website",
+		description:
+			"TruLocal is an e-commerce marketplace that provides an efficient bridge between consumers and their local retailers across all product categories in various unique neighborhoods.",
+		problem:
+			"The development team needed to create and maintain clean, customizable components to leverage Algolia's Instant Search widgets to power the product search page quickly and efficiently while working in the same repo.",
+		lessons:
+			"I was responsible for developing and maintaining the search route of the application.  I learned how to use Algolia's Instant Search widgets to filter and and search for products as well as setting up Algolia's Indices so the front-end would receive better data. I integrated Material UI components into the project to maintain the style that was laid out in the Figma designs.  I worked in a team of 5 developers and regularly did code reviews to maintain consistency while practicing Agile development.",
+		tech:
+			"JavaScript, React, React Router, Redux, Algolia, Jira, Figma, JSS, Material UI, i18next, clsx",
+		image: "/assets/TruLocal.jpg",
+		image2: "",
+		link: "https://www.trulocal.com/",
 	},
 	{
 		id: 12,
@@ -83,23 +101,23 @@ const workItems = [
 		image2: "/assets/photoAlbum2.png",
 		link: "https://cryptic-dusk-52003.herokuapp.com/",
 	},
-	{
-		id: 2,
-		title: "RyansList",
-		subtitle: "7th project",
-		brief: "Front & backend clone of CraigsList",
-		category: "Web Application",
-		description:
-			"We were tasked with making a replica CraigsList website where users could search and add postings using React components and a MySQL database.",
-		problem:
-			"Using React and Redux to keep track of several different pieces of state on differenet components while integrating a MySQL database.",
-		lessons:
-			"I learned how to construct useful and concise MySQL queries to retrieve date from and add data to the database.",
-		tech: "HTML, CSS, JavaScript, React, Redux, Node.js, Express, MySQL",
-		image: "/assets/ryanList.jpg",
-		image2: "/assets/ryanList2.png",
-		link: "https://mighty-garden-83965.herokuapp.com/",
-	},
+	// {
+	// 	id: 2,
+	// 	title: "RyansList",
+	// 	subtitle: "7th project",
+	// 	brief: "Front & backend clone of CraigsList",
+	// 	category: "Web Application",
+	// 	description:
+	// 		"We were tasked with making a replica CraigsList website where users could search and add postings using React components and a MySQL database.",
+	// 	problem:
+	// 		"Using React and Redux to keep track of several different pieces of state on differenet components while integrating a MySQL database.",
+	// 	lessons:
+	// 		"I learned how to construct useful and concise MySQL queries to retrieve date from and add data to the database.",
+	// 	tech: "HTML, CSS, JavaScript, React, Redux, Node.js, Express, MySQL",
+	// 	image: "/assets/ryanList.jpg",
+	// 	image2: "/assets/ryanList2.png",
+	// 	link: "https://mighty-garden-83965.herokuapp.com/",
+	// },
 	{
 		id: 3,
 		title: "Shopping Cart",

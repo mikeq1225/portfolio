@@ -14,11 +14,11 @@ export default (props) => {
 					</div>
 					<h4>JavaScript</h4>
 					<div className="progress">
-						<div style={{ width: "77%" }}></div>
+						<div style={{ width: "87%" }}></div>
 					</div>
 					<h4>React &amp; Redux</h4>
 					<div className="progress">
-						<div style={{ width: "75%" }}></div>
+						<div style={{ width: "83%" }}></div>
 					</div>
 					<h4>Express</h4>
 					<div className="progress">
@@ -26,7 +26,7 @@ export default (props) => {
 					</div>
 					<h4>MySQL</h4>
 					<div className="progress">
-						<div style={{ width: "85%" }}></div>
+						<div style={{ width: "70%" }}></div>
 					</div>
 					<h4>Node.js</h4>
 					<div className="progress">

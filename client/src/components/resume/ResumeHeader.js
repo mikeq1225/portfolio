@@ -19,7 +19,7 @@ export default (props) => {
 						<h1>
 							Michael <span>Quarne</span>
 						</h1>
-						<h3>Full-Stack Web Developer</h3>
+						<h3>React.js Developer</h3>
 					</div>
 					<div>
 						<ul>
