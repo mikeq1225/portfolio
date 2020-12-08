@@ -42,8 +42,8 @@ const workItems = [
 			"I learned how to plan and execute a large project, how to take all the languages and tools that I've learned and apply them to one project, how to use AWS as a remote MySQL database for our project, and I learned how to accomplish all of this while working in a remote environment.",
 		tech:
 			"HTML, CSS, Sass, Semantic UI, JavaScript, React, Redux, Node.js, Express, REST APIs, MySQL, AWS-RDS, Slack, Zoom",
-		image: "/assets/JurnEaseScreenShot.png",
-		image2: "/assets/Jurnease2.png",
+		image: "/assets/JurnEase3.png",
+		image2: "/assets/JurnEaseScreenShot.png",
 		link: "https://aqueous-refuge-23431.herokuapp.com",
 		link2: "https://www.youtube.com/watch?v=pT18Us8sayw&feature=youtu.be",
 		link3: "https://www.youtube.com/watch?v=IgaI8lv1QOQ&feature=youtu.be",

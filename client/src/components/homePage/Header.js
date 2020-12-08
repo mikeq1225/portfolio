@@ -83,7 +83,7 @@ export default (props) => {
 							<span
 								className="txt"
 								datawait="3000"
-								datawords='["Software Developer", "Full-Stack Engineer", "Web Designer"]'
+								datawords='["React.js Developer", "Full-Stack Engineer", "Web Designer"]'
 							></span>
 						</h1>
 						<p className="lead">

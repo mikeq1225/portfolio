@@ -13,8 +13,8 @@ export default (props) => {
 							<p>
 								"Michael is an extremely hard worker and a fantastic problem
 								solver. He's self motivated and gets things done and he's
-								extremely easy to get along with. He'd be a great asset to any
-								team."
+								extremely easy to get along with. I'd work with Mike again in a
+								heartbeat."
 							</p>
 							<ul>
 								<li>
@@ -28,6 +28,31 @@ export default (props) => {
 										<p>Michael Sweeney</p>
 										<p>
 											<span>From:</span> Las Vegas, Nevada
+										</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div>
+							<p>
+								"Michael is a fantastic engineer. He is dedicated to solving
+								problems efficiently and consistently produces amazing results.
+								He is great to work with because of his team oriented mentality
+								and his ready willingness to help in any way he can. It would be
+								a pleasure to work with Michael again."
+							</p>
+							<ul>
+								<li>
+									<img
+										src="assets/testimonials/rBishop.jpeg"
+										alt="person 3"
+									></img>
+								</li>
+								<li>
+									<div>
+										<p>Robert Bishop</p>
+										<p>
+											<span>From:</span> North Las Vegas, Nevada
 										</p>
 									</div>
 								</li>
@@ -51,29 +76,6 @@ export default (props) => {
 										<p>Joshua Lemke</p>
 										<p>
 											<span>From:</span> Germantown, Wisconsin
-										</p>
-									</div>
-								</li>
-							</ul>
-						</div>
-						<div>
-							<p>
-								"Mike was the best to work with. Very easy going but diligent.
-								He took the time to listen to what I wanted and came up with a
-								plan of how to execute that idea. Couldn't be happier."
-							</p>
-							<ul>
-								<li>
-									<img
-										src="assets/testimonials/person3.jpg"
-										alt="person 3"
-									></img>
-								</li>
-								<li>
-									<div>
-										<p>Matt Walters</p>
-										<p>
-											<span>From:</span> Henderson, Nevada
 										</p>
 									</div>
 								</li>

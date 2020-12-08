@@ -12,13 +12,16 @@ export default (props) => {
 	return (
 		<div id="workFeature">
 			<div className="container">
-				<h2 className="sectionTitle">Featured Project</h2>
+				<h2 className="sectionTitle">Featured Work</h2>
 				<div className="bottomLine"></div>
 				{/* <h1 className="textCenter">{feature.title}</h1> */}
 				<a href={feature.link} target="_blank" rel="noopener noreferrer">
 					<img src={feature.image} alt={feature.title + " replica"} />
 				</a>
-				<h1 className="textCenter">My work at TruLocal</h1>
+				<h1 className="textCenter">
+					My work at TruLocal{" "}
+					<span className="smallText">(click logo to view site)</span>
+				</h1>
 				{/* <p className="textCenter">
 					Click "Jurn(ease) Live" to check out the application. Register a made
 					up account to look around inside.

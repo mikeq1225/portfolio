@@ -5,13 +5,11 @@ import { FaChevronRight } from "react-icons/fa"
 
 export default (props) => {
 	const { feature, projects, openSource, fetchProjects } = useProjects()
-	const mustang = projects.find(
-		(project) => project.title === "Mustang Photo Album"
-	)
-	const vethead = projects.find((project) => project.title === "Vethead Brand")
-	// const superman = projects.find(
-	// 	(project) => project.title === "Superman Memory Game"
+	// const mustang = projects.find(
+	// 	(project) => project.title === "Mustang Photo Album"
 	// )
+	const vethead = projects.find((project) => project.title === "Vethead Brand")
+	const jurnease = projects.find((project) => project.title === "Jurn(ease)")
 
 	document.addEventListener("DOMContentLoaded", start)
 
@@ -80,8 +78,11 @@ export default (props) => {
 							<p className="panel hide">
 								Creative, technical, design-savvy React developer experienced in
 								implementing highly responsive user interface components through
-								JavaScript and React concepts . Proficient in translating
-								designs and wireframes into high quality code.
+								JavaScript and React concepts. Proficient in translating designs
+								and wireframes into high quality code. Passionate about learning
+								new languages and technologies, turning ideas into reality, and
+								working with dedicated teams to efficiently build applications
+								based on customer needs.
 							</p>
 						</li>
 						<li id="skills">
@@ -110,6 +111,208 @@ export default (props) => {
 								<li>Jira</li>
 								<li>Git</li>
 								<li>NginX</li>
+							</ul>
+						</li>
+						<li id="employment">
+							<div className="title" onClick={(e) => display(e)}>
+								<FaChevronRight />
+								<h2>Employment</h2>
+							</div>
+							<ul className="panel hide">
+								<li>
+									<div>
+										<div>
+											<h2>TruLocal</h2>
+											<p>San Francisco, CA</p>
+										</div>
+										<div>
+											<h4>React.js Developer</h4>
+											<p>Sept. 2020 - Current</p>
+										</div>
+										<p>
+											Responsible for turning Figma designs into high quality,
+											easily maintained reusable components that make up the
+											search route.
+										</p>
+										<p>
+											Conducted educational sessions for team members as a
+											subject matter expert (SME) for the implementation of
+											Algolia's Instant Search functionality.
+										</p>
+										<p>
+											Review the quality of code for mission-critical code and
+											design consistency across different team members.
+										</p>
+										<p>
+											Exceptional problem solving, debugging, and decision
+											making capabilities.
+										</p>
+									</div>
+								</li>
+								{/* <li>
+									<div>
+										<div>
+											<h2>Breakthru Beverage</h2>
+											<p>North Las Vegas, NV</p>
+										</div>
+										<div>
+											<h4>Merchandiser</h4>
+											<p>Sept. 2017 - Jan. 2020</p>
+										</div>
+										<p>
+											Organized record keeping using Google Drive making them
+											user friendly, easy to search, and easily accessed by
+											several people at once
+										</p>
+									</div>
+								</li> */}
+								{/* <li>
+									<div>
+										<div>
+											<h2>Guaranty bank</h2>
+											<p>Sheboygan, WI</p>
+										</div>
+										<div>
+											<h4>Assistant Branch Manager</h4>
+											<p>Jan. 2017 - May. 2017</p>
+										</div>
+										<p>
+											Boosted branch results by 9% by strengthening
+											relationships with the client base and identifying sales
+											and service solutions tailored to client needs.
+										</p>
+										<p>
+											Increased transparency for executive management by
+											identifying trends and creating reports to monitor
+											deviations from targets for improved account and employee
+											management.
+										</p>
+									</div>
+								</li> */}
+								<li>
+									<div>
+										<div>
+											<h2>General Beverage</h2>
+											<p>New Berlin, WI</p>
+										</div>
+										<div>
+											<h4>Merchandising Department Manager</h4>
+											<p>Jan. 2004 - Sept. 2016</p>
+										</div>
+										<p>
+											Developed mentoring program to create a culture of upward
+											mobility within the company.
+										</p>
+										<p>
+											Steered daily operations and business development
+											initiatives by successfully managing 12 fulltime
+											merchandisers and 6 part-time merchandisers across 7
+											counties.
+										</p>
+										<p>
+											Facilitated a collaborative work environment where
+											problems were managed immediately by having open lines of
+											communication with entire team.
+										</p>
+									</div>
+								</li>
+							</ul>
+						</li>
+						<li id="projects">
+							<div className="title" onClick={(e) => display(e)}>
+								<FaChevronRight />
+								<h2>Projects</h2>
+							</div>
+							<ul className="panel hide">
+								<li>
+									<a
+										href={feature && feature.link}
+										target="_blank"
+										rel="noopener noreferrer"
+									>
+										<h2>TruLocal</h2>
+									</a>
+									<p>
+										TruLocal is an e-commerce marketplace that provides an
+										efficient bridge between consumers and their local retailers
+										across all product categories. I was responsible for writing
+										reusable and easily maintained components for the product
+										search page. Assisted with writing the code to capture a
+										user's geolocation on the home page.
+									</p>
+								</li>
+								<li>
+									<a
+										href={openSource && openSource.link}
+										target="_blank"
+										rel="noopener noreferrer"
+									>
+										<h2>Shopify StoreFront API Examples</h2>
+									</a>
+									<h4>Open Source Contribution</h4>
+									<p>
+										Created{" "}
+										<a
+											href={openSource && openSource.link2}
+											target="_blank"
+											rel="noopener noreferrer"
+										>
+											reactHooks-redux-js-buy
+										</a>{" "}
+										folder to add to Shopify Storefront API's open source
+										examples of how to build custom e-commerce websites.
+										Refactored legacy React class based components into
+										functional components and added Redux for predictable state
+										management that is accessible everywhere in the app.
+									</p>
+								</li>
+								<li>
+									<a
+										href={jurnease && jurnease.link}
+										target="_blank"
+										rel="noopener noreferrer"
+									>
+										<h2>Jurn(ease) vacation planning app</h2>
+									</a>
+									<p>
+										Worked with a team remotely to plan, design, and build a
+										vacation planning web application using GitHub for version
+										control. Utilized JavaScript, React, Redux, HTML, Sass CSS
+										to build the front-end. Used Express and JSON web tokens to
+										authenticate to a AWS-RDS MySQL database for the back-end.
+									</p>
+								</li>
+								<li>
+									<a
+										href={vethead && vethead.link}
+										target="_blank"
+										rel="noopener noreferrer"
+									>
+										<h2>vethead brand</h2>
+									</a>
+									<p>
+										A custom e-commerce website built with React, and styled
+										using Sass. It integrates Shopify's Storefront API into the
+										custom website to handle authentication to client's Shopify
+										store and is hosted on Netlify.
+									</p>
+								</li>
+								{/* <li>
+									<a
+										href={mustang && mustang.link}
+										target="_blank"
+										rel="noopener noreferrer"
+									>
+										<h2>mustang photo album</h2>
+									</a>
+									<p>
+										Photo album using functional components in React to create a
+										stand alone app that can also easily be reused in another
+										React application where a photo album is needed. Used a
+										JSON-server database to present images tied to specific
+										Mustang Models in their own folders.
+									</p>
+								</li> */}
 							</ul>
 						</li>
 						<li id="experience">
@@ -150,99 +353,6 @@ export default (props) => {
 								</li>
 							</ul>
 						</li>
-						<li id="projects">
-							<div className="title" onClick={(e) => display(e)}>
-								<FaChevronRight />
-								<h2>Projects</h2>
-							</div>
-							<ul className="panel hide">
-								<li>
-									<a
-										href={openSource.link}
-										target="_blank"
-										rel="noopener noreferrer"
-									>
-										<h2>Shopify StoreFront API Examples</h2>
-									</a>
-									<h4>Open Source Contribution</h4>
-									<p>
-										Created{" "}
-										<a
-											href={openSource.link2}
-											target="_blank"
-											rel="noopener noreferrer"
-										>
-											reactHooks-redux-js-buy
-										</a>{" "}
-										folder to add to Shopify Storefront API's open source
-										examples of how to build custom e-commerce websites.
-										Refactored legacy React class based components into
-										functional components and added Redux for predictable state
-										management that is accessible everywhere in the app.
-									</p>
-								</li>
-								<li>
-									<a
-										href={feature.link}
-										target="_blank"
-										rel="noopener noreferrer"
-									>
-										<h2>Jurn(ease) vacation planning app</h2>
-									</a>
-									<p>
-										Worked with a team remotely to plan, design, and build a
-										vacation planning web application using GitHub for version
-										control. Utilized JavaScript, React, Redux, HTML, Sass CSS
-										to build the front-end. Used Express and JSON web tokens to
-										authenticate to a AWS-RDS MySQL database for the back-end.
-									</p>
-								</li>
-								<li>
-									<a
-										href={vethead && vethead.link}
-										target="_blank"
-										rel="noopener noreferrer"
-									>
-										<h2>vethead brand</h2>
-									</a>
-									<p>
-										A custom e-commerce website built with React, and styled
-										using Sass. It integrates Shopify's Storefront API into the
-										custom website to handle authentication to client's Shopify
-										store and is hosted on Netlify.
-									</p>
-								</li>
-								<li>
-									<a
-										href={mustang && mustang.link}
-										target="_blank"
-										rel="noopener noreferrer"
-									>
-										<h2>mustang photo album</h2>
-									</a>
-									<p>
-										Photo album using functional components in React to create a
-										stand alone app that can also easily be reused in another
-										React application where a photo album is needed. Used a
-										JSON-server database to present images tied to specific
-										Mustang Models in their own folders.
-									</p>
-								</li>
-								{/* <li>
-									<a
-										href={superman && superman.link}
-										target="_blank"
-										rel="noopener noreferrer"
-									>
-										<h2>Superman memory game</h2>
-									</a>
-									<p>
-										A Superman memory game using JavaScript and jQuery to try to
-										prevent Lex Luthor from taking over the world.
-									</p>
-								</li> */}
-							</ul>
-						</li>
 						<li id="education">
 							<div className="title" onClick={(e) => display(e)}>
 								<FaChevronRight />
@@ -265,81 +375,6 @@ export default (props) => {
 										<p>
 											Courses include: Intro to Scripting, Applied Statistics
 											for STEM, and Project Management in Info Tech
-										</p>
-									</div>
-								</li>
-							</ul>
-						</li>
-						<li id="employment">
-							<div className="title" onClick={(e) => display(e)}>
-								<FaChevronRight />
-								<h2>Employment</h2>
-							</div>
-							<ul className="panel hide">
-								<li>
-									<div>
-										<div>
-											<h2>Breakthru Beverage</h2>
-											<p>North Las Vegas, NV</p>
-										</div>
-										<div>
-											<h4>Merchandiser</h4>
-											<p>Sept. 2017 - Jan. 2020</p>
-										</div>
-										<p>
-											Organized record keeping using Google Drive making them
-											user friendly, easy to search, and easily accessed by
-											several people at once
-										</p>
-									</div>
-								</li>
-								<li>
-									<div>
-										<div>
-											<h2>Guaranty bank</h2>
-											<p>Sheboygan, WI</p>
-										</div>
-										<div>
-											<h4>Assistant Branch Manager</h4>
-											<p>Jan. 2017 - May. 2017</p>
-										</div>
-										<p>
-											Boosted branch results by 9% by strengthening
-											relationships with the client base and identifying sales
-											and service solutions tailored to client needs.
-										</p>
-										<p>
-											Increased transparency for executive management by
-											identifying trends and creating reports to monitor
-											deviations from targets for improved account and employee
-											management.
-										</p>
-									</div>
-								</li>
-								<li>
-									<div>
-										<div>
-											<h2>General Beverage</h2>
-											<p>New Berlin, WI</p>
-										</div>
-										<div>
-											<h4>Merchandising Department Manager</h4>
-											<p>Jan. 2004 - Sept. 2016</p>
-										</div>
-										<p>
-											Developed mentoring program to create a culture of upward
-											mobility within the company.
-										</p>
-										<p>
-											Steered daily operations and business development
-											initiatives by successfully managing 12 fulltime
-											merchandisers and 6 part-time merchandisers across 7
-											counties.
-										</p>
-										<p>
-											Facilitated a collaborative work environment where
-											problems were managed immediately by having open lines of
-											communication with entire team.
 										</p>
 									</div>
 								</li>
