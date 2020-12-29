@@ -24,7 +24,13 @@ export default (props) => {
 						<p>{openSource.solution}</p>
 						<h4>Why I contributed</h4>
 						<p>{openSource.lessons}</p>
-						<a href={openSource.link2}>Github Repo</a>
+						<a
+							href={openSource.link2}
+							rel="noopener noreferrer"
+							target="_blank"
+						>
+							Github Repo
+						</a>
 					</div>
 				</div>
 				<p className="textCenter">Check out some of my other projects</p>
