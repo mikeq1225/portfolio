@@ -130,22 +130,31 @@ export default (props) => {
 											<p>Sept. 2020 - Current</p>
 										</div>
 										<p>
-											Responsible for turning Figma designs into high quality,
-											easily maintained reusable components that make up the
-											search route.
+											Turned Figma designs into high quality, easily maintained
+											reusable React components using ES6 conventions that make
+											up the Search route.
 										</p>
 										<p>
-											Conducted educational sessions for team members as a
-											subject matter expert (SME) for the implementation of
-											Algolia's Instant Search functionality.
+											Communicated with QA via Slack and Jira tickets to quickly
+											fix bugs.
 										</p>
 										<p>
-											Review the quality of code for mission-critical code and
-											design consistency across different team members.
+											Worked with the Director of Development, the VP of
+											Product, the CTO, and the UX/UI Designer to develop and
+											implement new ideas for the application.
+										</p>
+										<p>
+											Became the subject matter expert (SME) for the
+											implementation of Algolia's Instant Search and conducted
+											educational sessions for the team.
 										</p>
 										<p>
 											Exceptional problem solving, debugging, and decision
 											making capabilities.
+										</p>
+										<p>
+											Review the quality of code for mission-critical code and
+											design consistency across different team members.
 										</p>
 									</div>
 								</li>
@@ -236,9 +245,25 @@ export default (props) => {
 										TruLocal is an e-commerce marketplace that provides an
 										efficient bridge between consumers and their local retailers
 										across all product categories. I was responsible for writing
-										reusable and easily maintained components for the product
-										search page. Assisted with writing the code to capture a
-										user's geolocation on the home page.
+										reusable and easily maintained React components for the
+										product search page. Assisted with writing the JavaScript
+										code to capture a user's geolocation or IP address location
+										when entering the application based on their preferences.
+									</p>
+								</li>
+								<li>
+									<a
+										href={vethead && vethead.link}
+										target="_blank"
+										rel="noopener noreferrer"
+									>
+										<h2>vethead brand</h2>
+									</a>
+									<p>
+										A custom e-commerce website built with React and JavaScript,
+										and is styled using Sass. It integrates Shopify's Storefront
+										API into the custom website to handle authentication to
+										client's Shopify store and is hosted on Netlify.
 									</p>
 								</li>
 								<li>
@@ -249,7 +274,7 @@ export default (props) => {
 									>
 										<h2>Shopify StoreFront API Examples</h2>
 									</a>
-									<h4>Open Source Contribution</h4>
+									<h4>Open-Source Contribution</h4>
 									<p>
 										Created{" "}
 										<a
@@ -259,7 +284,7 @@ export default (props) => {
 										>
 											reactHooks-redux-js-buy
 										</a>{" "}
-										folder to add to Shopify Storefront API's open source
+										folder to add to Shopify Storefront API's open-source
 										examples of how to build custom e-commerce websites.
 										Refactored legacy React class based components into
 										functional components and added Redux for predictable state
@@ -278,23 +303,8 @@ export default (props) => {
 										Worked with a team remotely to plan, design, and build a
 										vacation planning web application using GitHub for version
 										control. Utilized JavaScript, React, Redux, HTML, Sass CSS
-										to build the front-end. Used Express and JSON web tokens to
-										authenticate to a AWS-RDS MySQL database for the back-end.
-									</p>
-								</li>
-								<li>
-									<a
-										href={vethead && vethead.link}
-										target="_blank"
-										rel="noopener noreferrer"
-									>
-										<h2>vethead brand</h2>
-									</a>
-									<p>
-										A custom e-commerce website built with React, and styled
-										using Sass. It integrates Shopify's Storefront API into the
-										custom website to handle authentication to client's Shopify
-										store and is hosted on Netlify.
+										to build the front end. Used Express and JSON web tokens to
+										authenticate to a AWS-RDS MySQL database for the back end.
 									</p>
 								</li>
 								{/* <li>
@@ -339,15 +349,26 @@ export default (props) => {
 												A 720 hour, fully immersive, fast paced program working
 												with a team of developers
 											</li>
-											<li>Quickly built prototypes for websites and apps</li>
-											<li>Built production-quality web applications</li>
-											<li>Developed functional, beautiful interfaces</li>
+											<li>
+												Quickly built prototypes for websites and apps following
+												the newest JavaScript ES6 conventions
+											</li>
+											<li>
+												Built production-quality web applications using React,
+												JavaScript, HTML, and CSS
+											</li>
 											<li>
 												Learned in-depth JavaScript functions, objects, and
 												frameworks
 											</li>
-											<li>Created responsive design for web and mobile</li>
-											<li>Learned how to think and learn like a programmer</li>
+											<li>
+												Created responsive design for web and mobile using CSS
+												and Sass breakpoints
+											</li>
+											<li>
+												Learned how to think like a developer using the DRY and
+												KISS design methods
+											</li>
 										</ul>
 									</div>
 								</li>
