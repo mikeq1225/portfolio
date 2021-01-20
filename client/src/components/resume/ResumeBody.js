@@ -1,60 +1,39 @@
-import React, { useEffect } from "react"
+import React, { useEffect, useState } from "react"
 import { useProjects } from "../../hooks"
 import "../../styles/resume/ResumeBody.scss"
 import { FaChevronRight } from "react-icons/fa"
 
 export default (props) => {
 	const { feature, projects, openSource, fetchProjects } = useProjects()
-	// const mustang = projects.find(
-	// 	(project) => project.title === "Mustang Photo Album"
-	// )
+	const [summaryOpen, setSummaryOpen] = useState(false)
+	const [skillsOpen, setSkillsOpen] = useState(false)
+	const [employmentOpen, setEmploymentOpen] = useState(false)
+	const [projectsOpen, setProjectsOpen] = useState(false)
+	const [experienceOpen, setExperienceOpen] = useState(false)
+	const [educationOpen, setEducationOpen] = useState(false)
+
+	// const mustang = projects.find((project) => project.title === "Mustang Photo Album")
 	const vethead = projects.find((project) => project.title === "Vethead Brand")
 	const jurnease = projects.find((project) => project.title === "Jurn(ease)")
 
-	document.addEventListener("DOMContentLoaded", start)
+	useEffect(() => {
+		const panelFunctions = [
+			setSummaryOpen,
+			setSkillsOpen,
+			setEmploymentOpen,
+			setProjectsOpen,
+			setExperienceOpen,
+			setEducationOpen,
+		]
 
-	function start() {
-		setTimeout(() => {
-			let panels = document.getElementsByClassName("panel")
-			panels = Array.from(panels)
-			panels.forEach(function (panel, index) {
-				setTimeout(function () {
-					let arrow = panel.previousSibling.firstChild
-					arrow.classList.add("rotate")
-					panel.classList.add("show")
-					panel.classList.remove("hide")
-				}, index * 150)
-			})
+		panelFunctions.forEach((panel, index) => {
+			setTimeout(() => {
+				panel(true)
+			}, index * 400)
 		})
-	}
-
-	function display(e) {
-		e.preventDefault()
-		const para = e.target.closest("div").nextElementSibling
-		let arrow = e.target.nodeName
-		if (arrow === "DIV") {
-			arrow = e.target.firstChild
-		} else if (arrow === "H2") {
-			arrow = e.target.previousSibling
-		} else if (arrow === "svg") {
-			arrow = e.target
-		} else if (arrow === "path") {
-			arrow = e.target.parentNode
-		}
-
-		if (para.classList.contains("hide")) {
-			arrow.classList.toggle("rotate")
-			para.classList.remove("hide")
-			para.classList.add("show")
-		} else if (para.classList.contains("show")) {
-			arrow.classList.toggle("rotate")
-			para.classList.remove("show")
-			para.classList.add("hide")
-		}
-	}
+	}, [])
 
 	useEffect(() => {
-		start()
 		fetchProjects()
 	}, [])
 
@@ -71,11 +50,14 @@ export default (props) => {
 				<section className="resBody">
 					<ul id="accordion">
 						<li id="summary">
-							<div className="title" onClick={(e) => display(e)}>
-								<FaChevronRight />
+							<div
+								className="title"
+								onClick={() => setSummaryOpen(!summaryOpen)}
+							>
+								<FaChevronRight className={summaryOpen ? "rotate" : ""} />
 								<h2>Summary</h2>
 							</div>
-							<p className="panel hide">
+							<p className={summaryOpen ? "panel show" : "panel hide"}>
 								Creative, technical, design-savvy React developer experienced in
 								implementing highly responsive user interface components through
 								JavaScript and React concepts. Proficient in translating designs
@@ -86,11 +68,11 @@ export default (props) => {
 							</p>
 						</li>
 						<li id="skills">
-							<div className="title" onClick={(e) => display(e)}>
-								<FaChevronRight />
+							<div className="title" onClick={() => setSkillsOpen(!skillsOpen)}>
+								<FaChevronRight className={skillsOpen ? "rotate" : ""} />
 								<h2>Skills</h2>
 							</div>
-							<ul className="panel hide">
+							<ul className={skillsOpen ? "panel show" : "panel hide"}>
 								<li>JavaScript</li>
 								<li>Algolia</li>
 								<li>GitHub / BitBucket</li>
@@ -114,11 +96,14 @@ export default (props) => {
 							</ul>
 						</li>
 						<li id="employment">
-							<div className="title" onClick={(e) => display(e)}>
-								<FaChevronRight />
+							<div
+								className="title"
+								onClick={() => setEmploymentOpen(!employmentOpen)}
+							>
+								<FaChevronRight className={employmentOpen ? "rotate" : ""} />
 								<h2>Employment</h2>
 							</div>
-							<ul className="panel hide">
+							<ul className={employmentOpen ? "panel show" : "panel hide"}>
 								<li>
 									<div>
 										<div>
@@ -228,11 +213,14 @@ export default (props) => {
 							</ul>
 						</li>
 						<li id="projects">
-							<div className="title" onClick={(e) => display(e)}>
-								<FaChevronRight />
+							<div
+								className="title"
+								onClick={() => setProjectsOpen(!projectsOpen)}
+							>
+								<FaChevronRight className={projectsOpen ? "rotate" : ""} />
 								<h2>Projects</h2>
 							</div>
-							<ul className="panel hide">
+							<ul className={projectsOpen ? "panel show" : "panel hide"}>
 								<li>
 									<a
 										href={feature && feature.link}
@@ -326,11 +314,14 @@ export default (props) => {
 							</ul>
 						</li>
 						<li id="experience">
-							<div className="title" onClick={(e) => display(e)}>
-								<FaChevronRight />
+							<div
+								className="title"
+								onClick={() => setExperienceOpen(!experienceOpen)}
+							>
+								<FaChevronRight className={experienceOpen ? "rotate" : ""} />
 								<h2>Experience</h2>
 							</div>
-							<ul className="panel hide">
+							<ul className={experienceOpen ? "panel show" : "panel hide"}>
 								<li>
 									<div>
 										<div>
@@ -375,11 +366,14 @@ export default (props) => {
 							</ul>
 						</li>
 						<li id="education">
-							<div className="title" onClick={(e) => display(e)}>
-								<FaChevronRight />
+							<div
+								className="title"
+								onClick={() => setEducationOpen(!educationOpen)}
+							>
+								<FaChevronRight className={educationOpen ? "rotate" : ""} />
 								<h2>Education</h2>
 							</div>
-							<ul className="panel hide">
+							<ul className={educationOpen ? "panel show" : "panel hide"}>
 								<li>
 									<div>
 										<div>
