@@ -58,13 +58,13 @@ export default (props) => {
 								<h2>Summary</h2>
 							</div>
 							<p className={summaryOpen ? "panel show" : "panel hide"}>
-								Creative, technical, design-savvy React developer experienced in
-								implementing highly responsive user interface components through
-								JavaScript and React concepts. Proficient in translating designs
-								and wireframes into high quality code. Passionate about learning
-								new languages and technologies, turning ideas into reality, and
-								working with dedicated teams to efficiently build applications
-								based on customer needs.
+								Creative, technical, design-savvy Software Engineer experienced
+								in implementing highly responsive user interface components
+								through JavaScript and React concepts. Proficient in translating
+								designs and wireframes into high quality code. Passionate about
+								learning new languages and technologies, turning ideas into
+								reality, and working with dedicated teams to efficiently build
+								applications based on customer needs.
 							</p>
 						</li>
 						<li id="skills">
@@ -75,10 +75,10 @@ export default (props) => {
 							<ul className={skillsOpen ? "panel show" : "panel hide"}>
 								<li>JavaScript</li>
 								<li>Algolia</li>
-								<li>GitHub / BitBucket</li>
+								<li>GitHub / BitBucket / GitLab</li>
 								<li>Node.js</li>
 								<li>React</li>
-								<li>Material UI</li>
+								<li>Material UI / Semantic UI</li>
 								<li>Heroku / Netlify</li>
 								<li>Express</li>
 								<li>Redux</li>
@@ -88,7 +88,7 @@ export default (props) => {
 								<li>HTML</li>
 								<li>Sass</li>
 								<li>Agile &amp; Scrum Processes</li>
-								<li>MySQL</li>
+								<li>MySQL / Sequelize</li>
 								<li>CSS</li>
 								<li>Jira</li>
 								<li>Git</li>
@@ -107,12 +107,36 @@ export default (props) => {
 								<li>
 									<div>
 										<div>
+											<h2>Nellis Auction</h2>
+											<p>Las Vegas, NV</p>
+										</div>
+										<div>
+											<h4>Software Engineer</h4>
+											<p>Feb. 2021 - Current</p>
+										</div>
+										<p>
+											Rebuilt internal tools using the most current React and
+											JavaScript methods to raise operational productivity.
+										</p>
+										<p>
+											Used Sequelize to build and modify the API used on the
+											internal web tools.
+										</p>
+										<p>
+											Built small reusable React components used throughout the
+											application.
+										</p>
+									</div>
+								</li>
+								<li>
+									<div>
+										<div>
 											<h2>TruLocal</h2>
 											<p>San Francisco, CA</p>
 										</div>
 										<div>
 											<h4>React.js Developer</h4>
-											<p>Sept. 2020 - Current</p>
+											<p>Sept. 2020 - Jan. 2021</p>
 										</div>
 										<p>
 											Turned Figma designs into high quality, easily maintained
